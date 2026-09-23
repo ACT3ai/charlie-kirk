@@ -1,0 +1,124 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 27 September 2025 and 4 October 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:39:36.616Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-09-27T00:00:00Z'
+  window_utc_until_exclusive: '2025-10-04T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: FlightAware holds 3 flights for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1759405955-adhoc-782p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.16976
+      lon: 31.36003
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.14732
+      lon: 31.1681
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-10-02T12:19:57Z'
+      local: '2025-10-02 15:19:57+03:00'
+    estimated:
+      utc: '2025-10-02T12:19:57Z'
+      local: '2025-10-02 15:19:57+03:00'
+    actual:
+      utc: '2025-10-02T12:19:57Z'
+      local: '2025-10-02 15:19:57+03:00'
+  landing:
+    actual:
+      utc: '2025-10-02T12:19:57Z'
+      local: '2025-10-02 15:19:57+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBND-1759410626-adhoc-1835p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.19656
+      lon: 30.8642
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.83799
+      lon: 32.40121
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-10-02T13:18:12Z'
+      local: '2025-10-02 16:18:12+03:00'
+    estimated:
+      utc: '2025-10-02T13:18:12Z'
+      local: '2025-10-02 16:18:12+03:00'
+    actual:
+      utc: '2025-10-02T13:18:12Z'
+      local: '2025-10-02 16:18:12+03:00'
+  landing:
+    actual:
+      utc: '2025-10-02T13:18:12Z'
+      local: '2025-10-02 16:18:12+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBND-1759415427-adhoc-1872p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 28.24632
+      lon: 34.31639
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.78682
+      lon: 31.3235
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-10-02T14:45:34Z'
+      local: '2025-10-02 17:45:34+03:00'
+    estimated:
+      utc: '2025-10-02T14:45:34Z'
+      local: '2025-10-02 17:45:34+03:00'
+    actual:
+      utc: '2025-10-02T14:45:34Z'
+      local: '2025-10-02 17:45:34+03:00'
+  landing:
+    actual:
+      utc: '2025-10-02T14:45:34Z'
+      local: '2025-10-02 17:45:34+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

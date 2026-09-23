@@ -1,0 +1,115 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 2 August 2025 and 9 August 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:49:29.978Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-08-02T00:00:00Z'
+  window_utc_until_exclusive: '2025-08-09T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1754228096-adhoc-3060p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KICT
+    iata: ICT
+    faa_lid: ICT
+    name: Wichita Eisenhower
+    city: Wichita
+    timezone: America/Chicago
+  to:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  takeoff:
+    scheduled:
+      utc: '2025-08-03T13:41:51Z'
+      local: '2025-08-03 08:41:51-05:00'
+    estimated:
+      utc: '2025-08-03T13:39:16Z'
+      local: '2025-08-03 08:39:16-05:00'
+    actual:
+      utc: '2025-08-03T13:39:16Z'
+      local: '2025-08-03 08:39:16-05:00'
+    runway: 19L
+  landing:
+    scheduled:
+      utc: '2025-08-03T16:04:00Z'
+      local: '2025-08-03 12:04:00-04:00'
+    estimated:
+      utc: '2025-08-03T16:01:25Z'
+      local: '2025-08-03 12:01:25-04:00'
+    actual:
+      utc: '2025-08-03T16:01:25Z'
+      local: '2025-08-03 12:01:25-04:00'
+    runway: '01'
+  departure_versus_schedule: -0:02:35
+  arrival_versus_schedule: -0:02:35
+  airborne_duration: '2:22:09'
+  flight_plan:
+    planned_time_enroute: '2:22:09'
+- number: 2
+  flightaware_id: SUBTV-1754481093-adhoc-2973p
+  callsign: SU-BTV
+  registration: SU-BTV
+  aircraft_type_code: FA7X
+  flight_category: general aviation
+  outcome: result unknown
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-08-06T11:57:24Z'
+      local: '2025-08-06 07:57:24-04:00'
+    estimated:
+      utc: '2025-08-06T11:55:40Z'
+      local: '2025-08-06 07:55:40-04:00'
+    actual:
+      utc: '2025-08-06T11:55:40Z'
+      local: '2025-08-06 07:55:40-04:00'
+    runway: '01'
+  landing:
+    scheduled:
+      utc: '2025-08-06T21:55:55Z'
+      local: '2025-08-07 00:55:55+03:00'
+    estimated:
+      utc: '2025-08-06T21:54:11Z'
+      local: '2025-08-07 00:54:11+03:00'
+    actual:
+      utc: '2025-08-06T11:55:40Z'
+      local: '2025-08-06 14:55:40+03:00'
+    runway: '36'
+  departure_versus_schedule: -0:01:44
+  arrival_versus_schedule: '-10:00:15'
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: '9:58:31'
+    route_text: DITCH LUIGI HNNAH JFK FOXWD TUSKY N179G PORTI 4700N/05000W 4900N/04000W 5000N/03000W 5000N/02000W SOMAX ATSUR TAKAS ALUTA KORER LEMKA BEBIX LERGA TOZOT UT183 OTROT UM728 KOLON RAPUR RATAP
+      BTA DOKAR SUNEV BELIX UM728 SALUN N705 BOPIX N710 TAKRI M720 FYM W613 ALPID W8 CVO HEAZ
+    route_distance_mi: 5725

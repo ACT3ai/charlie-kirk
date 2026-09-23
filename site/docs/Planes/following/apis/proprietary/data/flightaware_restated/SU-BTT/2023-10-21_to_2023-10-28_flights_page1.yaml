@@ -1,0 +1,63 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 21 October 2023 and 28 October 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:32:12.178Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-10-21T00:00:00Z'
+  window_utc_until_exclusive: '2023-10-28T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 1
+reading: FlightAware holds 1 flight for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1698199829-adhoc-4751p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: HECA
+    iata: CAI
+    name: Cairo Int'l
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: EGLF
+    iata: FAB
+    name: Farnborough Airfield
+    city: Farnborough
+    timezone: Europe/London
+  takeoff:
+    scheduled:
+      utc: '2023-10-25T02:19:37Z'
+      local: '2023-10-25 05:19:37+03:00'
+    estimated:
+      utc: '2023-10-25T02:19:37Z'
+      local: '2023-10-25 05:19:37+03:00'
+    actual:
+      utc: '2023-10-25T02:19:37Z'
+      local: '2023-10-25 05:19:37+03:00'
+    runway: 23R
+  landing:
+    scheduled:
+      utc: '2023-10-25T06:57:53Z'
+      local: '2023-10-25 07:57:53+01:00'
+    estimated:
+      utc: '2023-10-25T06:57:53Z'
+      local: '2023-10-25 07:57:53+01:00'
+    actual:
+      utc: '2023-10-25T06:57:53Z'
+      local: '2023-10-25 07:57:53+01:00'
+    runway: '06'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: +0:00:00
+  airborne_duration: '4:38:16'
+  flight_plan:
+    planned_time_enroute: '4:38:16'

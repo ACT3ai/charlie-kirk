@@ -1,0 +1,88 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 4 January 2025 and 11 January 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:43:55.879Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-01-04T00:00:00Z'
+  window_utc_until_exclusive: '2025-01-11T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1736091157-adhoc-2990p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.7689
+      lon: 31.22691
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.7689
+      lon: 31.22691
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-01-05T15:46:55Z'
+      local: '2025-01-05 17:46:55+02:00'
+    estimated:
+      utc: '2025-01-05T15:46:55Z'
+      local: '2025-01-05 17:46:55+02:00'
+    actual:
+      utc: '2025-01-05T15:46:55Z'
+      local: '2025-01-05 17:46:55+02:00'
+  landing:
+    actual:
+      utc: '2025-01-05T15:46:55Z'
+      local: '2025-01-05 17:46:55+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTU-1736349301-adhoc-171p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.29793
+      lon: 31.5788
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.28942
+      lon: 32.1055
+    city: Assiut
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-01-08T15:30:47Z'
+      local: '2025-01-08 17:30:47+02:00'
+    estimated:
+      utc: '2025-01-08T15:30:47Z'
+      local: '2025-01-08 17:30:47+02:00'
+    actual:
+      utc: '2025-01-08T15:30:47Z'
+      local: '2025-01-08 17:30:47+02:00'
+  landing:
+    actual:
+      utc: '2025-01-08T15:30:47Z'
+      local: '2025-01-08 17:30:47+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

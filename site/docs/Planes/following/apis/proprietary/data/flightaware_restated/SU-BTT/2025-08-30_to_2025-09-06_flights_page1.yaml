@@ -1,0 +1,153 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 30 August 2025 and 6 September 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:34:31.343Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-08-30T00:00:00Z'
+  window_utc_until_exclusive: '2025-09-06T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: FlightAware holds 3 flights for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1756872451-sw-664p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 30.16539
+      lon: 31.35923
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2025-09-03T05:59:10Z'
+      local: '2025-09-03 08:59:10+03:00'
+    estimated:
+      utc: '2025-09-03T05:59:10Z'
+      local: '2025-09-03 08:59:10+03:00'
+    actual:
+      utc: '2025-09-03T05:59:10Z'
+      local: '2025-09-03 08:59:10+03:00'
+  landing:
+    estimated:
+      utc: '2025-09-03T10:05:39Z'
+      local: '2025-09-03 12:05:39+02:00'
+    actual:
+      utc: '2025-09-03T10:05:39Z'
+      local: '2025-09-03 12:05:39+02:00'
+    runway: '27'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '4:06:29'
+- number: 2
+  flightaware_id: SUBTT-1756949632-sw-1p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: KMOT
+    iata: MOT
+    faa_lid: MOT
+    name: Minot Intl
+    city: Minot
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2025-09-04T07:10:32Z'
+      local: '2025-09-04 09:10:32+02:00'
+    estimated:
+      utc: '2025-09-04T07:11:54Z'
+      local: '2025-09-04 09:11:54+02:00'
+    actual:
+      utc: '2025-09-04T07:11:54Z'
+      local: '2025-09-04 09:11:54+02:00'
+    runway: '25'
+  landing:
+    scheduled:
+      utc: '2025-09-04T16:02:45Z'
+      local: '2025-09-04 11:02:45-05:00'
+    estimated:
+      utc: '2025-09-04T16:04:07Z'
+      local: '2025-09-04 11:04:07-05:00'
+    actual:
+      utc: '2025-09-04T16:04:07Z'
+      local: '2025-09-04 11:04:07-05:00'
+    runway: '31'
+  departure_versus_schedule: +0:01:22
+  arrival_versus_schedule: +0:01:22
+  airborne_duration: '8:52:13'
+  flight_plan:
+    planned_time_enroute: '8:52:13'
+- number: 3
+  flightaware_id: SUBTT-1757005242-adhoc-1203p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KMOT
+    iata: MOT
+    faa_lid: MOT
+    name: Minot Intl
+    city: Minot
+    timezone: America/Chicago
+  to:
+    icao: KPVU
+    iata: PVU
+    faa_lid: PVU
+    name: Provo Muni
+    city: Provo
+    timezone: America/Denver
+  takeoff:
+    scheduled:
+      utc: '2025-09-04T17:12:24Z'
+      local: '2025-09-04 12:12:24-05:00'
+    estimated:
+      utc: '2025-09-04T17:07:37Z'
+      local: '2025-09-04 12:07:37-05:00'
+    actual:
+      utc: '2025-09-04T17:07:37Z'
+      local: '2025-09-04 12:07:37-05:00'
+    runway: '31'
+  landing:
+    scheduled:
+      utc: '2025-09-04T18:51:06Z'
+      local: '2025-09-04 12:51:06-06:00'
+    estimated:
+      utc: '2025-09-04T18:46:19Z'
+      local: '2025-09-04 12:46:19-06:00'
+    actual:
+      utc: '2025-09-04T18:46:19Z'
+      local: '2025-09-04 12:46:19-06:00'
+    runway: '13'
+  departure_versus_schedule: -0:04:47
+  arrival_versus_schedule: -0:04:47
+  airborne_duration: '1:38:42'
+  flight_plan:
+    planned_time_enroute: '1:38:42'

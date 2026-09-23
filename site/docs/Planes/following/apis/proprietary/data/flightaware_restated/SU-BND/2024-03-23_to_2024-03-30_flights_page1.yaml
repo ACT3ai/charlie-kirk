@@ -1,0 +1,53 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 23 March 2024 and 30 March 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:37:56.709Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-03-23T00:00:00Z'
+  window_utc_until_exclusive: '2024-03-30T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 1
+reading: FlightAware holds 1 flight for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1711602772-sw-690p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: LSGG
+    iata: GVA
+    name: Geneva Cointrin Int'l
+    city: Geneva
+    timezone: Europe/Zurich
+  to:
+    position_only_point:
+      lat: 30.3846
+      lon: 31.32927
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-03-28T11:04:29Z'
+      local: '2024-03-28 12:04:29+01:00'
+    estimated:
+      utc: '2024-03-28T11:02:46Z'
+      local: '2024-03-28 12:02:46+01:00'
+    actual:
+      utc: '2024-03-28T11:02:46Z'
+      local: '2024-03-28 12:02:46+01:00'
+    runway: '23'
+  landing:
+    actual:
+      utc: '2024-03-28T11:02:46Z'
+      local: '2024-03-28 13:02:46+02:00'
+  departure_versus_schedule: -0:01:43
+  airborne_duration: 0:00:00

@@ -1,0 +1,107 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 13 December 2025 and 20 December 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:49:53.260Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-12-13T00:00:00Z'
+  window_utc_until_exclusive: '2025-12-20T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1765623965-adhoc-1407p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.56369
+      lon: 28.98144
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.81271
+      lon: 30.54969
+    city: Amreya
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-12-13T11:13:37Z'
+      local: '2025-12-13 13:13:37+02:00'
+    estimated:
+      utc: '2025-12-13T11:13:37Z'
+      local: '2025-12-13 13:13:37+02:00'
+    actual:
+      utc: '2025-12-13T11:13:37Z'
+      local: '2025-12-13 13:13:37+02:00'
+  landing:
+    scheduled:
+      utc: '2025-12-13T11:28:30Z'
+      local: '2025-12-13 13:28:30+02:00'
+    estimated:
+      utc: '2025-12-13T11:28:30Z'
+      local: '2025-12-13 13:28:30+02:00'
+    actual:
+      utc: '2025-12-13T11:13:37Z'
+      local: '2025-12-13 13:13:37+02:00'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: -0:14:53
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: 0:14:53
+- number: 2
+  flightaware_id: SUBTV-1765781292-adhoc-1607p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 30.56732
+      lon: 31.05698
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFBD
+    iata: BOD
+    name: Bordeaux-Merignac
+    city: Bordeaux/Merignac
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2025-12-15T06:59:19Z'
+      local: '2025-12-15 08:59:19+02:00'
+    estimated:
+      utc: '2025-12-15T06:59:19Z'
+      local: '2025-12-15 08:59:19+02:00'
+    actual:
+      utc: '2025-12-15T06:59:19Z'
+      local: '2025-12-15 08:59:19+02:00'
+  landing:
+    scheduled:
+      utc: '2025-12-15T11:28:51Z'
+      local: '2025-12-15 12:28:51+01:00'
+    estimated:
+      utc: '2025-12-15T11:28:51Z'
+      local: '2025-12-15 12:28:51+01:00'
+    actual:
+      utc: '2025-12-15T11:28:51Z'
+      local: '2025-12-15 12:28:51+01:00'
+    runway: '23'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: +0:00:00
+  airborne_duration: '4:29:32'
+  flight_plan:
+    planned_time_enroute: '4:29:32'

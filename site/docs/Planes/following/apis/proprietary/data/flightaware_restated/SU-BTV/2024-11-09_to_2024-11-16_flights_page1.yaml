@@ -1,0 +1,160 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 9 November 2024 and 16 November 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:48:38.856Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-11-09T00:00:00Z'
+  window_utc_until_exclusive: '2024-11-16T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: FlightAware holds 4 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1731228545-adhoc-453p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.53091
+      lon: 30.85087
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.92404
+      lon: 30.49681
+    city: Amreya
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-11-10T09:09:57Z'
+      local: '2024-11-10 11:09:57+02:00'
+    estimated:
+      utc: '2024-11-10T09:09:57Z'
+      local: '2024-11-10 11:09:57+02:00'
+    actual:
+      utc: '2024-11-10T09:09:57Z'
+      local: '2024-11-10 11:09:57+02:00'
+  landing:
+    actual:
+      utc: '2024-11-10T09:09:57Z'
+      local: '2024-11-10 11:09:57+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTV-1731400880-adhoc-2400p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.43707
+      lon: 31.12664
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.93018
+      lon: 30.38781
+    city: Amreya
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-11-12T08:48:41Z'
+      local: '2024-11-12 10:48:41+02:00'
+    estimated:
+      utc: '2024-11-12T08:48:41Z'
+      local: '2024-11-12 10:48:41+02:00'
+    actual:
+      utc: '2024-11-12T08:48:41Z'
+      local: '2024-11-12 10:48:41+02:00'
+  landing:
+    actual:
+      utc: '2024-11-12T08:48:41Z'
+      local: '2024-11-12 10:48:41+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBTV-1731424626-adhoc-2761p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.81378
+      lon: 31.44276
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.98642
+      lon: 32.22501
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-11-12T15:35:02Z'
+      local: '2024-11-12 17:35:02+02:00'
+    estimated:
+      utc: '2024-11-12T15:35:02Z'
+      local: '2024-11-12 17:35:02+02:00'
+    actual:
+      utc: '2024-11-12T15:35:02Z'
+      local: '2024-11-12 17:35:02+02:00'
+  landing:
+    actual:
+      utc: '2024-11-12T15:35:02Z'
+      local: '2024-11-12 17:35:02+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBTV-1731429010-adhoc-2632p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 28.40785
+      lon: 34.25817
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.59392
+      lon: 32.24572
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-11-12T16:36:43Z'
+      local: '2024-11-12 18:36:43+02:00'
+    estimated:
+      utc: '2024-11-12T16:36:43Z'
+      local: '2024-11-12 18:36:43+02:00'
+    actual:
+      utc: '2024-11-12T16:36:43Z'
+      local: '2024-11-12 18:36:43+02:00'
+  landing:
+    actual:
+      utc: '2024-11-12T16:36:43Z'
+      local: '2024-11-12 18:36:43+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

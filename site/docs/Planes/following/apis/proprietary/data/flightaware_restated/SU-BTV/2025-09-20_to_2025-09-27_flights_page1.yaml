@@ -1,0 +1,160 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 20 September 2025 and 27 September 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:49:35.975Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-09-20T00:00:00Z'
+  window_utc_until_exclusive: '2025-09-27T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: FlightAware holds 4 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1758348441-adhoc-1749p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.56978
+      lon: 30.91951
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 31.03261
+      lon: 30.3711
+    city: Amreya
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-09-20T06:21:08Z'
+      local: '2025-09-20 09:21:08+03:00'
+    estimated:
+      utc: '2025-09-20T06:21:08Z'
+      local: '2025-09-20 09:21:08+03:00'
+    actual:
+      utc: '2025-09-20T06:21:08Z'
+      local: '2025-09-20 09:21:08+03:00'
+  landing:
+    actual:
+      utc: '2025-09-20T06:21:08Z'
+      local: '2025-09-20 09:21:08+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTV-1758352360-adhoc-3011p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 31.02539
+      lon: 30.33756
+    city: Amreya
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.69667
+      lon: 30.6126
+    city: Amreya
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-09-20T07:43:52Z'
+      local: '2025-09-20 10:43:52+03:00'
+    estimated:
+      utc: '2025-09-20T07:43:52Z'
+      local: '2025-09-20 10:43:52+03:00'
+    actual:
+      utc: '2025-09-20T07:43:52Z'
+      local: '2025-09-20 10:43:52+03:00'
+  landing:
+    actual:
+      utc: '2025-09-20T07:43:52Z'
+      local: '2025-09-20 10:43:52+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBTV-1758643903-adhoc-2104p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.18233
+      lon: 31.33683
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.0112
+      lon: 31.1915
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-09-23T16:18:23Z'
+      local: '2025-09-23 19:18:23+03:00'
+    estimated:
+      utc: '2025-09-23T16:18:23Z'
+      local: '2025-09-23 19:18:23+03:00'
+    actual:
+      utc: '2025-09-23T16:18:23Z'
+      local: '2025-09-23 19:18:23+03:00'
+  landing:
+    actual:
+      utc: '2025-09-23T16:18:23Z'
+      local: '2025-09-23 19:18:23+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBTV-1758699569-adhoc-1226p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.44121
+      lon: 30.98282
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.11691
+      lon: 29.22848
+    city: Amreya
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-09-24T07:53:00Z'
+      local: '2025-09-24 10:53:00+03:00'
+    estimated:
+      utc: '2025-09-24T07:53:00Z'
+      local: '2025-09-24 10:53:00+03:00'
+    actual:
+      utc: '2025-09-24T07:53:00Z'
+      local: '2025-09-24 10:53:00+03:00'
+  landing:
+    actual:
+      utc: '2025-09-24T07:53:00Z'
+      local: '2025-09-24 10:53:00+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

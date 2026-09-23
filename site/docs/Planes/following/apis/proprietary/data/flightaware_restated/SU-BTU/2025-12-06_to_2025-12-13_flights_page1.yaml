@@ -1,0 +1,62 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 6 December 2025 and 13 December 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:44:52.709Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-12-06T00:00:00Z'
+  window_utc_until_exclusive: '2025-12-13T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 1
+reading: FlightAware holds 1 flight for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1765442778-adhoc-1331p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: LFBD
+    iata: BOD
+    name: Bordeaux-Merignac
+    city: Bordeaux/Merignac
+    timezone: Europe/Paris
+  to:
+    position_only_point:
+      lat: 31.05885
+      lon: 31.14392
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-12-11T08:55:13Z'
+      local: '2025-12-11 09:55:13+01:00'
+    estimated:
+      utc: '2025-12-11T08:56:15Z'
+      local: '2025-12-11 09:56:15+01:00'
+    actual:
+      utc: '2025-12-11T08:56:15Z'
+      local: '2025-12-11 09:56:15+01:00'
+    runway: '23'
+  landing:
+    scheduled:
+      utc: '2025-12-11T12:32:15Z'
+      local: '2025-12-11 14:32:15+02:00'
+    estimated:
+      utc: '2025-12-11T12:33:17Z'
+      local: '2025-12-11 14:33:17+02:00'
+    actual:
+      utc: '2025-12-11T08:56:15Z'
+      local: '2025-12-11 10:56:15+02:00'
+  departure_versus_schedule: +0:01:02
+  arrival_versus_schedule: '-3:36:00'
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: '3:37:02'

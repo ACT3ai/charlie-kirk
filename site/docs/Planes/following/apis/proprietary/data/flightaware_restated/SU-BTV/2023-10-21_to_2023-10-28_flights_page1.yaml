@@ -1,0 +1,93 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 21 October 2023 and 28 October 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:47:13.573Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-10-21T00:00:00Z'
+  window_utc_until_exclusive: '2023-10-28T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1697938210-adhoc-3557p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 30.19189
+      lon: 31.3161
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: EGLF
+    iata: FAB
+    name: Farnborough Airfield
+    city: Farnborough
+    timezone: Europe/London
+  takeoff:
+    scheduled:
+      utc: '2023-10-22T01:38:47Z'
+      local: '2023-10-22 04:38:47+03:00'
+    estimated:
+      utc: '2023-10-22T01:38:47Z'
+      local: '2023-10-22 04:38:47+03:00'
+    actual:
+      utc: '2023-10-22T01:38:47Z'
+      local: '2023-10-22 04:38:47+03:00'
+  landing:
+    estimated:
+      utc: '2023-10-22T07:11:26Z'
+      local: '2023-10-22 08:11:26+01:00'
+    actual:
+      utc: '2023-10-22T07:11:26Z'
+      local: '2023-10-22 08:11:26+01:00'
+    runway: '24'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '5:32:39'
+- number: 2
+  flightaware_id: SUBTV-1698153976-adhoc-2316p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: EGLF
+    iata: FAB
+    name: Farnborough Airfield
+    city: Farnborough
+    timezone: Europe/London
+  to:
+    position_only_point:
+      lat: 29.99026
+      lon: 31.35811
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-10-24T13:56:11Z'
+      local: '2023-10-24 14:56:11+01:00'
+    estimated:
+      utc: '2023-10-24T13:33:37Z'
+      local: '2023-10-24 14:33:37+01:00'
+    actual:
+      utc: '2023-10-24T13:33:37Z'
+      local: '2023-10-24 14:33:37+01:00'
+    runway: '24'
+  landing:
+    actual:
+      utc: '2023-10-24T13:33:37Z'
+      local: '2023-10-24 16:33:37+03:00'
+  departure_versus_schedule: -0:22:34
+  airborne_duration: 0:00:00

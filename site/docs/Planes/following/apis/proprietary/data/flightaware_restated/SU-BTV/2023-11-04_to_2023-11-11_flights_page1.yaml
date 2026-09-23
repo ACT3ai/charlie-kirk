@@ -1,0 +1,62 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 4 November 2023 and 11 November 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:47:17.810Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-11-04T00:00:00Z'
+  window_utc_until_exclusive: '2023-11-11T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 1
+reading: FlightAware holds 1 flight for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1699196458-adhoc-1472p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-11-05T15:16:08Z'
+      local: '2023-11-05 10:16:08-05:00'
+    estimated:
+      utc: '2023-11-05T15:07:29Z'
+      local: '2023-11-05 10:07:29-05:00'
+    actual:
+      utc: '2023-11-05T15:07:29Z'
+      local: '2023-11-05 10:07:29-05:00'
+    runway: '27'
+  landing:
+    scheduled:
+      utc: '2023-11-06T00:54:31Z'
+      local: '2023-11-06 02:54:31+02:00'
+    estimated:
+      utc: '2023-11-06T00:45:52Z'
+      local: '2023-11-06 02:45:52+02:00'
+    actual:
+      utc: '2023-11-06T00:45:52Z'
+      local: '2023-11-06 02:45:52+02:00'
+    runway: '36'
+  departure_versus_schedule: -0:08:39
+  arrival_versus_schedule: -0:08:39
+  airborne_duration: '9:38:23'
+  flight_plan:
+    planned_time_enroute: '9:38:23'

@@ -1,0 +1,111 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 22 March 2025 and 29 March 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:49:13.216Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-03-22T00:00:00Z'
+  window_utc_until_exclusive: '2025-03-29T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1742734430-adhoc-1587p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KLNK
+    iata: LNK
+    faa_lid: LNK
+    name: Lincoln
+    city: Lincoln
+    timezone: America/Chicago
+  to:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  takeoff:
+    scheduled:
+      utc: '2025-03-23T12:59:34Z'
+      local: '2025-03-23 07:59:34-05:00'
+    estimated:
+      utc: '2025-03-23T12:57:29Z'
+      local: '2025-03-23 07:57:29-05:00'
+    actual:
+      utc: '2025-03-23T12:57:29Z'
+      local: '2025-03-23 07:57:29-05:00'
+    runway: '35'
+  landing:
+    scheduled:
+      utc: '2025-03-23T15:00:46Z'
+      local: '2025-03-23 11:00:46-04:00'
+    estimated:
+      utc: '2025-03-23T14:58:41Z'
+      local: '2025-03-23 10:58:41-04:00'
+    actual:
+      utc: '2025-03-23T14:58:41Z'
+      local: '2025-03-23 10:58:41-04:00'
+    runway: '27'
+  departure_versus_schedule: -0:02:05
+  arrival_versus_schedule: -0:02:05
+  airborne_duration: '2:01:12'
+  flight_plan:
+    planned_time_enroute: '2:01:12'
+- number: 2
+  flightaware_id: SUBTV-1742816361-adhoc-457p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-03-24T11:43:16Z'
+      local: '2025-03-24 07:43:16-04:00'
+    estimated:
+      utc: '2025-03-24T11:48:47Z'
+      local: '2025-03-24 07:48:47-04:00'
+    actual:
+      utc: '2025-03-24T11:48:47Z'
+      local: '2025-03-24 07:48:47-04:00'
+    runway: '19'
+  landing:
+    scheduled:
+      utc: '2025-03-24T22:12:01Z'
+      local: '2025-03-25 00:12:01+02:00'
+    estimated:
+      utc: '2025-03-24T22:17:32Z'
+      local: '2025-03-25 00:17:32+02:00'
+    actual:
+      utc: '2025-03-24T22:17:32Z'
+      local: '2025-03-25 00:17:32+02:00'
+    runway: '36'
+  departure_versus_schedule: +0:05:31
+  arrival_versus_schedule: +0:05:31
+  airborne_duration: '10:28:45'
+  flight_plan:
+    planned_time_enroute: '10:28:45'

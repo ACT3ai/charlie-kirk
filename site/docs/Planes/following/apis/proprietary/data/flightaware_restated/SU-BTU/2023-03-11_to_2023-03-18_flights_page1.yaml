@@ -1,0 +1,153 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 11 March 2023 and 18 March 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:41:36.814Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-03-11T00:00:00Z'
+  window_utc_until_exclusive: '2023-03-18T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: FlightAware holds 3 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1678708590-adhoc-0
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  to:
+    icao: KICT
+    iata: ICT
+    faa_lid: ICT
+    name: Wichita Eisenhower
+    city: Wichita
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2023-03-13T12:26:30Z'
+      local: '2023-03-13 07:26:30-05:00'
+    estimated:
+      utc: '2023-03-13T12:00:51Z'
+      local: '2023-03-13 07:00:51-05:00'
+    actual:
+      utc: '2023-03-13T12:00:51Z'
+      local: '2023-03-13 07:00:51-05:00'
+    runway: 26L
+  landing:
+    scheduled:
+      utc: '2023-03-13T13:24:34Z'
+      local: '2023-03-13 08:24:34-05:00'
+    estimated:
+      utc: '2023-03-13T12:58:55Z'
+      local: '2023-03-13 07:58:55-05:00'
+    actual:
+      utc: '2023-03-13T12:58:55Z'
+      local: '2023-03-13 07:58:55-05:00'
+    runway: 01R
+  departure_versus_schedule: -0:25:39
+  arrival_versus_schedule: -0:25:39
+  airborne_duration: 0:58:04
+  flight_plan:
+    planned_time_enroute: 0:58:04
+- number: 2
+  flightaware_id: SUBTU-1678716955-adhoc-0
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KICT
+    iata: ICT
+    faa_lid: ICT
+    name: Wichita Eisenhower
+    city: Wichita
+    timezone: America/Chicago
+  to:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  takeoff:
+    scheduled:
+      utc: '2023-03-13T14:45:55Z'
+      local: '2023-03-13 09:45:55-05:00'
+    estimated:
+      utc: '2023-03-13T14:21:23Z'
+      local: '2023-03-13 09:21:23-05:00'
+    actual:
+      utc: '2023-03-13T14:21:23Z'
+      local: '2023-03-13 09:21:23-05:00'
+    runway: 01R
+  landing:
+    scheduled:
+      utc: '2023-03-13T17:00:00Z'
+      local: '2023-03-13 13:00:00-04:00'
+    estimated:
+      utc: '2023-03-13T16:35:28Z'
+      local: '2023-03-13 12:35:28-04:00'
+    actual:
+      utc: '2023-03-13T16:35:28Z'
+      local: '2023-03-13 12:35:28-04:00'
+    runway: '01'
+  departure_versus_schedule: -0:24:32
+  arrival_versus_schedule: -0:24:32
+  airborne_duration: '2:14:05'
+  flight_plan:
+    planned_time_enroute: '2:14:05'
+- number: 3
+  flightaware_id: SUBTU-1678794916-adhoc-0
+  callsign: SU-BTU
+  registration: SU-BTU
+  aircraft_type_code: FA7X
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  to:
+    position_only_point:
+      lat: 31.31534
+      lon: 30.12904
+    city: Amreya
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-03-14T12:25:16Z'
+      local: '2023-03-14 08:25:16-04:00'
+    estimated:
+      utc: '2023-03-14T12:01:43Z'
+      local: '2023-03-14 08:01:43-04:00'
+    actual:
+      utc: '2023-03-14T12:01:43Z'
+      local: '2023-03-14 08:01:43-04:00'
+    runway: '27'
+  landing:
+    actual:
+      utc: '2023-03-14T12:01:43Z'
+      local: '2023-03-14 14:01:43+02:00'
+  departure_versus_schedule: -0:23:33
+  airborne_duration: 0:00:00

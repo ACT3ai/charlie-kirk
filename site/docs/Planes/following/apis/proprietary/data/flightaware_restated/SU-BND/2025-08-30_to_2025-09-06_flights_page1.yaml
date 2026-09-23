@@ -1,0 +1,65 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 30 August 2025 and 6 September 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:39:33.531Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-08-30T00:00:00Z'
+  window_utc_until_exclusive: '2025-09-06T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 1
+reading: FlightAware holds 1 flight for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1757095547-adhoc-2401p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KPVU
+    iata: PVU
+    faa_lid: PVU
+    name: Provo Muni
+    city: Provo
+    timezone: America/Denver
+  to:
+    icao: KPVU
+    iata: PVU
+    faa_lid: PVU
+    name: Provo Muni
+    city: Provo
+    timezone: America/Denver
+  takeoff:
+    scheduled:
+      utc: '2025-09-05T18:16:42Z'
+      local: '2025-09-05 12:16:42-06:00'
+    estimated:
+      utc: '2025-09-05T18:06:31Z'
+      local: '2025-09-05 12:06:31-06:00'
+    actual:
+      utc: '2025-09-05T18:06:31Z'
+      local: '2025-09-05 12:06:31-06:00'
+    runway: '13'
+  landing:
+    scheduled:
+      utc: '2025-09-05T19:24:40Z'
+      local: '2025-09-05 13:24:40-06:00'
+    estimated:
+      utc: '2025-09-05T19:14:29Z'
+      local: '2025-09-05 13:14:29-06:00'
+    actual:
+      utc: '2025-09-05T19:14:29Z'
+      local: '2025-09-05 13:14:29-06:00'
+    runway: '13'
+  departure_versus_schedule: -0:10:11
+  arrival_versus_schedule: -0:10:11
+  airborne_duration: '1:07:58'
+  flight_plan:
+    planned_time_enroute: '1:07:58'

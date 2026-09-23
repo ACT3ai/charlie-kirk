@@ -1,0 +1,111 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 5 August 2023 and 12 August 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:42:02.187Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-08-05T00:00:00Z'
+  window_utc_until_exclusive: '2023-08-12T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1691637289-sw-559p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: HECA
+    iata: CAI
+    name: Cairo Int'l
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2023-08-10T05:07:09Z'
+      local: '2023-08-10 08:07:09+03:00'
+    estimated:
+      utc: '2023-08-10T05:07:09Z'
+      local: '2023-08-10 08:07:09+03:00'
+    actual:
+      utc: '2023-08-10T05:07:09Z'
+      local: '2023-08-10 08:07:09+03:00'
+    runway: 23R
+  landing:
+    scheduled:
+      utc: '2023-08-10T09:18:02Z'
+      local: '2023-08-10 11:18:02+02:00'
+    estimated:
+      utc: '2023-08-10T09:18:02Z'
+      local: '2023-08-10 11:18:02+02:00'
+    actual:
+      utc: '2023-08-10T09:18:02Z'
+      local: '2023-08-10 11:18:02+02:00'
+    runway: '07'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: +0:00:00
+  airborne_duration: '4:10:53'
+  flight_plan:
+    planned_time_enroute: '4:10:53'
+- number: 2
+  flightaware_id: SUBTU-1691716349-sw-461p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2023-08-11T06:52:02Z'
+      local: '2023-08-11 08:52:02+02:00'
+    estimated:
+      utc: '2023-08-11T06:50:03Z'
+      local: '2023-08-11 08:50:03+02:00'
+    actual:
+      utc: '2023-08-11T06:50:03Z'
+      local: '2023-08-11 08:50:03+02:00'
+    runway: '25'
+  landing:
+    scheduled:
+      utc: '2023-08-11T15:13:57Z'
+      local: '2023-08-11 10:13:57-05:00'
+    estimated:
+      utc: '2023-08-11T15:11:58Z'
+      local: '2023-08-11 10:11:58-05:00'
+    actual:
+      utc: '2023-08-11T15:11:58Z'
+      local: '2023-08-11 10:11:58-05:00'
+    runway: 26L
+  departure_versus_schedule: -0:01:59
+  arrival_versus_schedule: -0:01:59
+  airborne_duration: '8:21:55'
+  flight_plan:
+    planned_time_enroute: '8:21:55'

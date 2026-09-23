@@ -1,0 +1,124 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 18 October 2025 and 25 October 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:34:37.783Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-10-18T00:00:00Z'
+  window_utc_until_exclusive: '2025-10-25T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: FlightAware holds 3 flights for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1761031660-adhoc-1670p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 28.71212
+      lon: 31.78
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.71212
+      lon: 31.78
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-10-21T07:50:10Z'
+      local: '2025-10-21 10:50:10+03:00'
+    estimated:
+      utc: '2025-10-21T07:50:10Z'
+      local: '2025-10-21 10:50:10+03:00'
+    actual:
+      utc: '2025-10-21T07:50:10Z'
+      local: '2025-10-21 10:50:10+03:00'
+  landing:
+    actual:
+      utc: '2025-10-21T07:50:10Z'
+      local: '2025-10-21 10:50:10+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTT-1761037628-adhoc-1692p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 28.17923
+      lon: 32.00597
+    city: Assiut
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.77653
+      lon: 31.32218
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-10-21T09:28:46Z'
+      local: '2025-10-21 12:28:46+03:00'
+    estimated:
+      utc: '2025-10-21T09:28:46Z'
+      local: '2025-10-21 12:28:46+03:00'
+    actual:
+      utc: '2025-10-21T09:28:46Z'
+      local: '2025-10-21 12:28:46+03:00'
+  landing:
+    actual:
+      utc: '2025-10-21T09:28:46Z'
+      local: '2025-10-21 12:28:46+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBTT-1761117405-adhoc-370p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.97066
+      lon: 31.22831
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.6393
+      lon: 31.37507
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-10-22T07:34:24Z'
+      local: '2025-10-22 10:34:24+03:00'
+    estimated:
+      utc: '2025-10-22T07:34:24Z'
+      local: '2025-10-22 10:34:24+03:00'
+    actual:
+      utc: '2025-10-22T07:34:24Z'
+      local: '2025-10-22 10:34:24+03:00'
+  landing:
+    actual:
+      utc: '2025-10-22T07:34:24Z'
+      local: '2025-10-22 10:34:24+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

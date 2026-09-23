@@ -1,0 +1,159 @@
+tail,source,field,before,after,last_day_before,first_day_after,bracket_days
+N102DZ,adsb-lol,ownOp,WILMINGTON TRUST CO TRUSTEE,GV 555 LLC,2024-02-10,2024-02-13,3
+N102DZ,adsb-lol,summary,first held 2023-02-22 flags=none ownOp=WILMINGTON TRUST CO TRUSTEE,last held 2025-10-09 flags=none ownOp=GV 555 LLC,,,191
+N102DZ,adsbexchange-samples,ownOp,WILMINGTON TRUST CO TRUSTEE,GV 555 LLC,2023-04-01,2024-01-01,275
+N102DZ,adsbexchange-samples,ownOp,GV 555 LLC,"ELDERBERRY CHESTNUT LLC, SUNNY BLUE SKY LLC, UST ENTERPRISES LLC",2025-09-01,2025-12-01,91
+N102DZ,adsbexchange-samples,flags,none,LADD,2025-12-01,2026-04-01,121
+N102DZ,adsbexchange-samples,summary,first held 2022-05-01 flags=none ownOp=WILMINGTON TRUST CO TRUSTEE,"last held 2026-06-01 flags=LADD ownOp=ELDERBERRY CHESTNUT LLC, SUNNY BLUE SKY LLC, UST ENTERPRISES LLC",,,18
+N102DZ,adsblol-github-backup,summary,first held 2025-10-13 flags=none ownOp=GV 555 LLC,last held 2025-10-13 flags=none ownOp=GV 555 LLC,,,1
+N102DZ,airplanes-live,ownOp,WILMINGTON TRUST CO TRUSTEE,,2023-03-09,2023-03-23,14
+N102DZ,airplanes-live,ownOp,,WILMINGTON TRUST CO TRUSTEE,2023-07-21,2023-12-05,137
+N102DZ,airplanes-live,ownOp,WILMINGTON TRUST CO TRUSTEE,REGISTRATION PENDING,2023-12-07,2024-01-01,25
+N102DZ,airplanes-live,ownOp,REGISTRATION PENDING,GV 555 LLC,2024-02-04,2024-02-10,6
+N102DZ,airplanes-live,ownOp,GV 555 LLC,REGISTRATION PENDING,2025-10-13,2025-10-15,2
+N102DZ,airplanes-live,ownOp,REGISTRATION PENDING,ELDERBERRY CHESTNUT LLC,2025-11-22,2025-11-30,8
+N102DZ,airplanes-live,flags,none,LADD,2026-05-18,2026-05-20,2
+N102DZ,airplanes-live,summary,first held 2023-02-06 flags=none ownOp=WILMINGTON TRUST CO TRUSTEE,last held 2026-09-16 flags=LADD ownOp=ELDERBERRY CHESTNUT LLC,,,517
+N108MS,airplanes-live,flags,LADD,none,2023-03-08,2023-03-10,2
+N108MS,airplanes-live,ownOp,YONA AVIATION II LLC,,2023-03-08,2023-03-10,2
+N108MS,airplanes-live,flags,none,LADD,2023-08-27,2023-10-05,39
+N108MS,airplanes-live,ownOp,,YONA AVIATION II LLC,2023-08-27,2023-10-05,39
+N108MS,airplanes-live,summary,first held 2023-02-06 flags=LADD ownOp=YONA AVIATION II LLC,last held 2026-09-16 flags=LADD ownOp=YONA AVIATION II LLC,,,399
+N336LS,adsb-lol,summary,first held 2023-09-05 flags=LADD ownOp=LAS VEGAS SANDS CORP,last held 2023-09-11 flags=LADD ownOp=LAS VEGAS SANDS CORP,,,3
+N336LS,airplanes-live,flags,LADD,none,2023-03-09,2023-03-27,18
+N336LS,airplanes-live,ownOp,LAS VEGAS SANDS CORP,,2023-03-09,2023-03-27,18
+N336LS,airplanes-live,flags,none,not_in_header,2023-09-04,2023-09-12,8
+N336LS,airplanes-live,registration,N336LS,,2023-09-04,2023-09-12,8
+N336LS,airplanes-live,flags,not_in_header,LADD,2023-09-21,2023-10-10,19
+N336LS,airplanes-live,ownOp,,LAS VEGAS SANDS CORP,2023-09-21,2023-10-10,19
+N336LS,airplanes-live,registration,,N336LS,2023-09-21,2023-10-10,19
+N336LS,airplanes-live,summary,first held 2023-02-12 flags=LADD ownOp=LAS VEGAS SANDS CORP,last held 2026-09-08 flags=LADD ownOp=LAS VEGAS SANDS CORP,,,256
+N337LS,adsb-lol,summary,first held 2026-08-16 flags=LADD ownOp=LAS VEGAS SANDS CORP,last held 2026-08-16 flags=LADD ownOp=LAS VEGAS SANDS CORP,,,1
+N337LS,airplanes-live,flags,LADD,none,2023-02-24,2023-04-01,36
+N337LS,airplanes-live,ownOp,LAS VEGAS SANDS CORP,,2023-02-24,2023-04-01,36
+N337LS,airplanes-live,flags,none,LADD,2023-04-02,2023-11-10,222
+N337LS,airplanes-live,ownOp,,LAS VEGAS SANDS CORP,2023-04-02,2023-11-10,222
+N337LS,airplanes-live,flags,LADD,not_in_header,2023-11-21,2025-09-29,678
+N337LS,airplanes-live,ownOp,LAS VEGAS SANDS CORP,,2023-11-21,2025-09-29,678
+N337LS,airplanes-live,registration,N337LS,,2023-11-21,2025-09-29,678
+N337LS,airplanes-live,flags,not_in_header,LADD,2025-10-07,2025-10-15,8
+N337LS,airplanes-live,ownOp,,LAS VEGAS SANDS CORP,2025-10-07,2025-10-15,8
+N337LS,airplanes-live,registration,,N337LS,2025-10-07,2025-10-15,8
+N337LS,airplanes-live,summary,first held 2023-02-24 flags=LADD ownOp=LAS VEGAS SANDS CORP,last held 2026-09-15 flags=LADD ownOp=LAS VEGAS SANDS CORP,,,72
+N338LS,adsb-lol,summary,first held 2023-09-08 flags=LADD ownOp=LAS VEGAS SANDS CORP,last held 2023-09-08 flags=LADD ownOp=LAS VEGAS SANDS CORP,,,1
+N338LS,airplanes-live,flags,LADD,none,2023-03-07,2023-03-17,10
+N338LS,airplanes-live,ownOp,LAS VEGAS SANDS CORP,,2023-03-07,2023-03-17,10
+N338LS,airplanes-live,flags,none,not_in_header,2023-09-03,2023-09-17,14
+N338LS,airplanes-live,registration,N338LS,,2023-09-03,2023-09-17,14
+N338LS,airplanes-live,flags,not_in_header,LADD,2023-09-17,2023-12-11,85
+N338LS,airplanes-live,ownOp,,LAS VEGAS SANDS CORP,2023-09-17,2023-12-11,85
+N338LS,airplanes-live,registration,,N338LS,2023-09-17,2023-12-11,85
+N338LS,airplanes-live,summary,first held 2023-02-08 flags=LADD ownOp=LAS VEGAS SANDS CORP,last held 2026-08-27 flags=LADD ownOp=LAS VEGAS SANDS CORP,,,266
+N339LS,adsb-lol,summary,first held 2024-12-06 flags=LADD ownOp=LAS VEGAS SANDS CORP,last held 2024-12-06 flags=LADD ownOp=LAS VEGAS SANDS CORP,,,1
+N339LS,airplanes-live,flags,LADD,none,2023-03-09,2023-03-11,2
+N339LS,airplanes-live,ownOp,LAS VEGAS SANDS CORP,,2023-03-09,2023-03-11,2
+N339LS,airplanes-live,flags,none,not_in_header,2023-09-03,2023-09-16,13
+N339LS,airplanes-live,registration,N339LS,,2023-09-03,2023-09-16,13
+N339LS,airplanes-live,flags,not_in_header,LADD,2023-09-26,2023-10-04,8
+N339LS,airplanes-live,ownOp,,LAS VEGAS SANDS CORP,2023-09-26,2023-10-04,8
+N339LS,airplanes-live,registration,,N339LS,2023-09-26,2023-10-04,8
+N339LS,airplanes-live,summary,first held 2023-02-09 flags=LADD ownOp=LAS VEGAS SANDS CORP,last held 2026-09-15 flags=LADD ownOp=LAS VEGAS SANDS CORP,,,245
+N40JD,adsb-lol,ownOp,JDT AVIATION LLC,NUP AVIATION LLC,2024-07-25,2024-10-25,92
+N40JD,adsb-lol,summary,first held 2023-03-15 flags=none ownOp=JDT AVIATION LLC,last held 2025-09-28 flags=none ownOp=NUP AVIATION LLC,,,86
+N40JD,adsbexchange-samples,ownOp,JDT AVIATION LLC,NUP AVIATION LLC,2024-06-01,2025-01-01,214
+N40JD,adsbexchange-samples,summary,first held 2022-06-01 flags=none ownOp=JDT AVIATION LLC,last held 2026-04-01 flags=none ownOp=NUP AVIATION LLC,,,11
+N40JD,airplanes-live,ownOp,JDT AVIATION LLC,,2023-02-19,2023-03-15,24
+N40JD,airplanes-live,flags,none,not_in_header,2023-08-28,2023-09-29,32
+N40JD,airplanes-live,registration,N40JD,,2023-08-28,2023-09-29,32
+N40JD,airplanes-live,flags,not_in_header,none,2023-10-01,2023-10-14,13
+N40JD,airplanes-live,ownOp,,JDT AVIATION LLC,2023-10-01,2023-10-14,13
+N40JD,airplanes-live,registration,,N40JD,2023-10-01,2023-10-14,13
+N40JD,airplanes-live,ownOp,JDT AVIATION LLC,NUP AVIATION LLC,2024-08-12,2024-10-25,74
+N40JD,airplanes-live,summary,first held 2023-02-16 flags=none ownOp=JDT AVIATION LLC,last held 2026-08-25 flags=none ownOp=NUP AVIATION LLC,,,242
+N560TW,adsb-lol,summary,first held 2023-02-28 flags=none ownOp=T W LEWIS-AVIATION LLC,last held 2025-10-09 flags=none ownOp=T W LEWIS-AVIATION LLC,,,167
+N560TW,adsbexchange-samples,flags,not_in_header,none,2022-04-01,2022-05-01,30
+N560TW,adsbexchange-samples,summary,first held 2022-01-01 flags=not_in_header ownOp=T W LEWIS-AVIATION LLC,last held 2026-08-01 flags=none ownOp=T W LEWIS-AVIATION LLC,,,23
+N560TW,airplanes-live,ownOp,T W LEWIS-AVIATION LLC,,2023-03-09,2023-03-11,2
+N560TW,airplanes-live,flags,none,not_in_header,2023-09-03,2023-09-12,9
+N560TW,airplanes-live,registration,N560TW,,2023-09-03,2023-09-12,9
+N560TW,airplanes-live,flags,not_in_header,none,2023-10-02,2023-10-10,8
+N560TW,airplanes-live,ownOp,,T W LEWIS-AVIATION LLC,2023-10-02,2023-10-10,8
+N560TW,airplanes-live,registration,,N560TW,2023-10-02,2023-10-10,8
+N560TW,airplanes-live,summary,first held 2023-02-15 flags=none ownOp=T W LEWIS-AVIATION LLC,last held 2026-09-09 flags=none ownOp=T W LEWIS-AVIATION LLC,,,462
+N582MM,adsb-lol,ownOp,WILDHORSE LLC,"TK ENTERPRISES LLC, JRO AVIATION LLC, DOJA CONTRACTING LLC",2023-06-21,2023-06-25,4
+N582MM,adsb-lol,ownOp,"TK ENTERPRISES LLC, JRO AVIATION LLC, DOJA CONTRACTING LLC","DOJA CONTRACTING LLC, TK ENTERPRISES LLC, JRO AVIATION LLC",2024-02-11,2024-03-07,25
+N582MM,adsb-lol,summary,first held 2023-03-08 flags=none ownOp=WILDHORSE LLC,"last held 2025-10-11 flags=none ownOp=DOJA CONTRACTING LLC, TK ENTERPRISES LLC, JRO AVIATION LLC",,,435
+N582MM,adsbexchange-samples,flags,not_in_header,none,2022-04-01,2023-06-01,426
+N582MM,adsbexchange-samples,ownOp,WILDHORSE LLC,"TK ENTERPRISES LLC, JRO AVIATION LLC, DOJA CONTRACTING LLC",2023-09-01,2024-01-01,122
+N582MM,adsbexchange-samples,ownOp,"TK ENTERPRISES LLC, JRO AVIATION LLC, DOJA CONTRACTING LLC","DOJA CONTRACTING LLC, TK ENTERPRISES LLC, JRO AVIATION LLC",2024-01-01,2024-06-01,152
+N582MM,adsbexchange-samples,summary,first held 2022-04-01 flags=not_in_header ownOp=WILDHORSE LLC,"last held 2025-12-01 flags=none ownOp=DOJA CONTRACTING LLC, TK ENTERPRISES LLC, JRO AVIATION LLC",,,23
+N582MM,airplanes-live,ownOp,WILDHORSE LLC,,2023-03-08,2023-03-21,13
+N582MM,airplanes-live,flags,none,not_in_header,2023-09-04,2023-09-13,9
+N582MM,airplanes-live,registration,N582MM,,2023-09-04,2023-09-13,9
+N582MM,airplanes-live,flags,not_in_header,none,2023-09-29,2023-10-06,7
+N582MM,airplanes-live,ownOp,,TK ENTERPRISES LLC,2023-09-29,2023-10-06,7
+N582MM,airplanes-live,registration,,N582MM,2023-09-29,2023-10-06,7
+N582MM,airplanes-live,ownOp,TK ENTERPRISES LLC,DOJA CONTRACTING LLC,2024-01-29,2024-02-06,8
+N582MM,airplanes-live,summary,first held 2023-02-06 flags=none ownOp=WILDHORSE LLC,last held 2025-12-05 flags=none ownOp=DOJA CONTRACTING LLC,,,705
+N79SC,adsb-lol,summary,first held 2023-09-06 flags=none ownOp=D E MAGARIN ASSET MANAGEMENT LLC,last held 2023-09-12 flags=none ownOp=D E MAGARIN ASSET MANAGEMENT LLC,,,4
+N79SC,airplanes-live,flags,none,not_in_header,2023-09-02,2023-09-14,12
+N79SC,airplanes-live,registration,N79SC,,2023-09-02,2023-09-14,12
+N79SC,airplanes-live,flags,not_in_header,none,2023-10-03,2023-10-04,1
+N79SC,airplanes-live,ownOp,,D E MAGARIN ASSET MANAGEMENT LLC,2023-10-03,2023-10-04,1
+N79SC,airplanes-live,registration,,N79SC,2023-10-03,2023-10-04,1
+N79SC,airplanes-live,ownOp,D E MAGARIN ASSET MANAGEMENT LLC,FIRST STATE BANK,2026-01-30,2026-04-20,80
+N79SC,airplanes-live,ownOp,FIRST STATE BANK,TVPX AIRCRAFT SOLUTIONS INC TRUSTEE,2026-04-28,2026-04-30,2
+N79SC,airplanes-live,flags,none,LADD,2026-05-01,2026-06-01,31
+N79SC,airplanes-live,ownOp,TVPX AIRCRAFT SOLUTIONS INC TRUSTEE,BANK OF UTAH TRUSTEE,2026-07-13,2026-08-11,29
+N79SC,airplanes-live,summary,first held 2023-05-22 flags=none ownOp=,last held 2026-08-11 flags=LADD ownOp=BANK OF UTAH TRUSTEE,,,580
+N804MS,adsb-lol,summary,first held 2023-09-09 flags=LADD ownOp=INTERFACE OPERATIONS LLC,last held 2023-09-12 flags=LADD ownOp=INTERFACE OPERATIONS LLC,,,4
+N804MS,airplanes-live,flags,LADD,none,2023-02-08,2023-03-18,38
+N804MS,airplanes-live,ownOp,INTERFACE OPERATIONS LLC,,2023-02-08,2023-03-18,38
+N804MS,airplanes-live,flags,none,LADD,2023-08-28,2024-02-21,177
+N804MS,airplanes-live,ownOp,,INTERFACE OPERATIONS LLC,2023-08-28,2024-02-21,177
+N804MS,airplanes-live,summary,first held 2023-02-08 flags=LADD ownOp=INTERFACE OPERATIONS LLC,last held 2026-09-08 flags=LADD ownOp=INTERFACE OPERATIONS LLC,,,167
+N872RA,adsb-lol,summary,first held 2023-03-03 flags=none ownOp=A&E HAWKER LP,last held 2025-10-10 flags=none ownOp=A&E HAWKER LP,,,166
+N872RA,adsbexchange-samples,flags,not_in_header,none,2022-04-01,2022-12-01,244
+N872RA,adsbexchange-samples,summary,first held 2022-04-01 flags=not_in_header ownOp=A&E HAWKER LP,last held 2026-08-01 flags=none ownOp=A&E HAWKER LP,,,24
+N872RA,airplanes-live,ownOp,A&E HAWKER LP,,2023-03-05,2023-03-10,5
+N872RA,airplanes-live,ownOp,,A&E HAWKER LP,2023-08-24,2023-12-27,125
+N872RA,airplanes-live,summary,first held 2023-02-06 flags=none ownOp=A&E HAWKER LP,last held 2026-09-16 flags=none ownOp=A&E HAWKER LP,,,670
+N885LS,adsb-lol,summary,first held 2023-09-06 flags=LADD ownOp=LAS VEGAS SANDS CORP,last held 2023-09-11 flags=LADD ownOp=LAS VEGAS SANDS CORP,,,2
+N885LS,airplanes-live,flags,LADD,none,2023-03-09,2023-03-12,3
+N885LS,airplanes-live,ownOp,LAS VEGAS SANDS CORP,,2023-03-09,2023-03-12,3
+N885LS,airplanes-live,flags,none,not_in_header,2023-09-03,2023-09-12,9
+N885LS,airplanes-live,registration,N885LS,,2023-09-03,2023-09-12,9
+N885LS,airplanes-live,flags,not_in_header,LADD,2023-10-04,2023-10-06,2
+N885LS,airplanes-live,ownOp,,LAS VEGAS SANDS CORP,2023-10-04,2023-10-06,2
+N885LS,airplanes-live,registration,,N885LS,2023-10-04,2023-10-06,2
+N885LS,airplanes-live,summary,first held 2023-02-07 flags=LADD ownOp=LAS VEGAS SANDS CORP,last held 2026-09-16 flags=LADD ownOp=LAS VEGAS SANDS CORP,,,420
+N888KG,adsb-lol,summary,first held 2023-04-30 flags=LADD ownOp=N888KG LLC,last held 2025-10-09 flags=LADD ownOp=N888KG LLC,,,78
+N888KG,adsbexchange-samples,flags,not_in_header,none,2022-04-01,2022-06-01,61
+N888KG,adsbexchange-samples,flags,none,LADD,2022-07-01,2022-12-01,153
+N888KG,adsbexchange-samples,ownOp,TM300 LLC,N888KG LLC,2022-07-01,2022-12-01,153
+N888KG,adsbexchange-samples,summary,first held 2022-03-01 flags=not_in_header ownOp=TM300 LLC,last held 2026-02-01 flags=LADD ownOp=N888KG LLC,,,13
+N888KG,airplanes-live,flags,LADD,none,2023-02-11,2023-04-15,63
+N888KG,airplanes-live,ownOp,N888KG LLC,,2023-02-11,2023-04-15,63
+N888KG,airplanes-live,flags,none,not_in_header,2023-08-26,2023-09-25,30
+N888KG,airplanes-live,registration,N888KG,,2023-08-26,2023-09-25,30
+N888KG,airplanes-live,flags,not_in_header,LADD,2023-09-29,2023-10-09,10
+N888KG,airplanes-live,ownOp,,N888KG LLC,2023-09-29,2023-10-09,10
+N888KG,airplanes-live,registration,,N888KG,2023-09-29,2023-10-09,10
+N888KG,airplanes-live,summary,first held 2023-02-09 flags=LADD ownOp=N888KG LLC,last held 2026-09-07 flags=LADD ownOp=N888KG LLC,,,212
+N889LS,adsb-lol,summary,first held 2024-05-13 flags=LADD ownOp=LAS VEGAS SANDS CORP,last held 2024-05-13 flags=LADD ownOp=LAS VEGAS SANDS CORP,,,1
+N889LS,airplanes-live,flags,LADD,none,2023-02-16,2023-03-20,32
+N889LS,airplanes-live,ownOp,LAS VEGAS SANDS CORP,,2023-02-16,2023-03-20,32
+N889LS,airplanes-live,flags,none,not_in_header,2023-08-11,2023-09-27,47
+N889LS,airplanes-live,registration,N889LS,,2023-08-11,2023-09-27,47
+N889LS,airplanes-live,flags,not_in_header,LADD,2023-10-03,2023-10-09,6
+N889LS,airplanes-live,ownOp,,LAS VEGAS SANDS CORP,2023-10-03,2023-10-09,6
+N889LS,airplanes-live,registration,,N889LS,2023-10-03,2023-10-09,6
+N889LS,airplanes-live,summary,first held 2023-02-13 flags=LADD ownOp=LAS VEGAS SANDS CORP,last held 2026-09-16 flags=LADD ownOp=LAS VEGAS SANDS CORP,,,375
+T7-ELL,adsb-lol,summary,first held 2023-02-24 flags=none ownOp=,last held 2025-10-11 flags=none ownOp=,,,147
+T7-ELL,adsbexchange-samples,flags,not_in_header,none,2022-02-01,2022-08-01,181
+T7-ELL,adsbexchange-samples,flags,none,LADD,2026-02-01,2026-05-01,89
+T7-ELL,adsbexchange-samples,summary,first held 2022-02-01 flags=not_in_header ownOp=,last held 2026-08-01 flags=LADD ownOp=,,,12
+T7-ELL,airplanes-live,ownOp,,Sunset Aviation - Llc - United States Of America,2023-09-04,2023-10-18,44
+T7-ELL,airplanes-live,ownOp,Sunset Aviation - Llc - United States Of America,,2024-12-30,2025-06-24,176
+T7-ELL,airplanes-live,flags,none,LADD,2026-07-04,2026-07-10,6
+T7-ELL,airplanes-live,summary,first held 2023-02-24 flags=none ownOp=,last held 2026-09-16 flags=LADD ownOp=,,,351

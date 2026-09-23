@@ -1,0 +1,233 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 5 April 2025 and 12 April 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:39:13.962Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-04-05T00:00:00Z'
+  window_utc_until_exclusive: '2025-04-12T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 6
+reading: FlightAware holds 6 flights for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1744112422-adhoc-1820p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.96074
+      lon: 31.30697
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.82011
+      lon: 31.07957
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-04-08T11:46:50Z'
+      local: '2025-04-08 13:46:50+02:00'
+    estimated:
+      utc: '2025-04-08T11:46:50Z'
+      local: '2025-04-08 13:46:50+02:00'
+    actual:
+      utc: '2025-04-08T11:46:50Z'
+      local: '2025-04-08 13:46:50+02:00'
+  landing:
+    actual:
+      utc: '2025-04-08T11:46:50Z'
+      local: '2025-04-08 13:46:50+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBND-1744125781-adhoc-3621p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.81461
+      lon: 31.18179
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-04-08T16:08:09Z'
+      local: '2025-04-08 18:08:09+02:00'
+    estimated:
+      utc: '2025-04-08T16:08:09Z'
+      local: '2025-04-08 18:08:09+02:00'
+    actual:
+      utc: '2025-04-08T16:08:09Z'
+      local: '2025-04-08 18:08:09+02:00'
+  landing:
+    estimated:
+      utc: '2025-04-08T16:27:01Z'
+      local: '2025-04-08 18:27:01+02:00'
+    actual:
+      utc: '2025-04-08T16:27:01Z'
+      local: '2025-04-08 18:27:01+02:00'
+    runway: '36'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:18:52
+- number: 3
+  flightaware_id: SUBND-1744175703-adhoc-1833p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 27.69355
+      lon: 31.10568
+    city: Assiut
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-04-09T05:24:52Z'
+      local: '2025-04-09 07:24:52+02:00'
+    estimated:
+      utc: '2025-04-09T05:18:34Z'
+      local: '2025-04-09 07:18:34+02:00'
+    actual:
+      utc: '2025-04-09T05:18:34Z'
+      local: '2025-04-09 07:18:34+02:00'
+    runway: '18'
+  landing:
+    actual:
+      utc: '2025-04-09T05:18:34Z'
+      local: '2025-04-09 07:18:34+02:00'
+  departure_versus_schedule: -0:06:18
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBND-1744213080-adhoc-388p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 26.63905
+      lon: 30.83545
+    city: Assiut
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 27.66451
+      lon: 31.10224
+    city: Assiut
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-04-09T16:17:09Z'
+      local: '2025-04-09 18:17:09+02:00'
+    estimated:
+      utc: '2025-04-09T16:17:09Z'
+      local: '2025-04-09 18:17:09+02:00'
+    actual:
+      utc: '2025-04-09T16:17:09Z'
+      local: '2025-04-09 18:17:09+02:00'
+  landing:
+    actual:
+      utc: '2025-04-09T16:17:09Z'
+      local: '2025-04-09 18:17:09+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 5
+  flightaware_id: SUBND-1744273255-adhoc-1906p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 27.96858
+      lon: 32.02735
+    city: Assiut
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 27.08899
+      lon: 32.35183
+    city: Sohag
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-04-10T08:48:28Z'
+      local: '2025-04-10 10:48:28+02:00'
+    estimated:
+      utc: '2025-04-10T08:48:28Z'
+      local: '2025-04-10 10:48:28+02:00'
+    actual:
+      utc: '2025-04-10T08:48:28Z'
+      local: '2025-04-10 10:48:28+02:00'
+  landing:
+    actual:
+      utc: '2025-04-10T08:48:28Z'
+      local: '2025-04-10 10:48:28+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 6
+  flightaware_id: SUBND-1744278951-adhoc-1449p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 26.1172
+      lon: 32.73165
+    city: Luxor
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 27.99247
+      lon: 32.08051
+    city: Assiut
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-04-10T10:06:15Z'
+      local: '2025-04-10 12:06:15+02:00'
+    estimated:
+      utc: '2025-04-10T10:06:15Z'
+      local: '2025-04-10 12:06:15+02:00'
+    actual:
+      utc: '2025-04-10T10:06:15Z'
+      local: '2025-04-10 12:06:15+02:00'
+  landing:
+    actual:
+      utc: '2025-04-10T10:06:15Z'
+      local: '2025-04-10 12:06:15+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

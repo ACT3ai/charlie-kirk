@@ -11,6 +11,12 @@
 //                                      filing, never a removal              $0.020
 //   GET /aircraft/{ident}/owner        US / AU / NZ registrations only      $0.002
 //   GET /history/aircraft/{reg}/last_flight   NOT in the default probe      $0.200
+//   GET /history/flights/{id}/track    the flown path of ONE past flight        $0.012
+//       CHECKED 2026-09-16: the live /flights/{id}/track refuses anything older
+//       than 10 days ("please use the historical version of this endpoint"), and
+//       the historical one answers for 2022 flights - 666 positions for SU-BTT's
+//       13 Nov 2022 Paris-Wichita leg. Paths across the whole claim window are
+//       therefore buyable, one flight at a time.
 //   GET /account/usage                 this month's spend, used by the guard $0.000
 //
 // Prices are FlightAware's published Standard-tier rates, checked 2026-09-14.
@@ -55,7 +61,7 @@ import { privateVendorDir } from "./private_store.js";
 const OUT = privateVendorDir("flightaware");
 const BASE = "https://aeroapi.flightaware.com/aeroapi";
 const MAX_SPAN_DAYS = 7;
-const PRICE = { history: 0.020, blocked: 0.020, owner: 0.002, last_flight: 0.200 };
+const PRICE = { history: 0.020, blocked: 0.020, owner: 0.002, last_flight: 0.200, track: 0.012 };
 const MONTH_CAP_DEFAULT = 90;
 const RUN_BUDGET_DEFAULT = 5;
 const SPEND_LEDGER = `${OUT}_spend.csv`;
@@ -153,6 +159,16 @@ export async function historyFlights(ident, start, end, { maxPages = 1, identTyp
     n++;
   }
   return pages;
+}
+
+/** The flown path of one PAST flight. Positions are the vendor's data: they stay in the
+ *  private store and are never republished - what goes public is a restated summary. */
+export async function historyTrack(faFlightId, { tail, monthCap, runBudget, run = { spent: 0 } } = {}) {
+  const opts = { monthCap, runBudget, run };
+  const url = `${BASE}/history/flights/${encodeURIComponent(faFlightId)}/track`;
+  const { status, text, json } = await billed("track", url, opts);
+  await savePull({ dir: `${OUT}${tail || faFlightId.split("-")[0]}/tracks`, name: `${faFlightId}_track.json`, url, status, body: text, note: NOTE });
+  return { status, positions: json?.positions?.length ?? 0 };
 }
 
 export async function probe(ident, { withLastFlight = false, monthCap, runBudget, run = { spent: 0 } } = {}) {

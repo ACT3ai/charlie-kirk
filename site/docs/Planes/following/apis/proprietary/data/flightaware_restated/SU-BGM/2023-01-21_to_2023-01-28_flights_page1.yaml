@@ -1,0 +1,52 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BGM
+  question_asked: Which flights does FlightAware hold for SU-BGM between 21 January 2023 and 28 January 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:51:18.026Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-01-21T00:00:00Z'
+  window_utc_until_exclusive: '2023-01-28T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 1
+reading: FlightAware holds 1 flight for SU-BGM in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBGM-1674290144-adhoc-0
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.50667
+      lon: 31.46511
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.00526
+      lon: 31.73907
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-01-21T08:57:00Z'
+      local: '2023-01-21 10:57:00+02:00'
+    estimated:
+      utc: '2023-01-21T08:57:00Z'
+      local: '2023-01-21 10:57:00+02:00'
+    actual:
+      utc: '2023-01-21T08:57:00Z'
+      local: '2023-01-21 10:57:00+02:00'
+  landing:
+    actual:
+      utc: '2023-01-21T08:57:00Z'
+      local: '2023-01-21 10:57:00+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

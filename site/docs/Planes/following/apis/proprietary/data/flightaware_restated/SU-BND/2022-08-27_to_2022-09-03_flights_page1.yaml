@@ -1,0 +1,111 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 27 August 2022 and 3 September 2022 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:35:52.460Z'
+  vendor_http_status: 200
+  window_utc_from: '2022-08-27T00:00:00Z'
+  window_utc_until_exclusive: '2022-09-03T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1661987957-adhoc-0
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KCPS
+    iata: CPS
+    faa_lid: CPS
+    name: St Louis Downtown
+    city: Cahokia/St Louis
+    timezone: America/Chicago
+  to:
+    icao: CYYR
+    iata: YYR
+    name: CFB Goose Bay (Goose Bay)
+    city: Goose Bay
+    timezone: America/Goose_Bay
+  takeoff:
+    scheduled:
+      utc: '2022-08-31T23:49:17Z'
+      local: '2022-08-31 18:49:17-05:00'
+    estimated:
+      utc: '2022-08-31T23:22:00Z'
+      local: '2022-08-31 18:22:00-05:00'
+    actual:
+      utc: '2022-08-31T23:22:00Z'
+      local: '2022-08-31 18:22:00-05:00'
+    runway: 12R
+  landing:
+    scheduled:
+      utc: '2022-09-01T03:20:13Z'
+      local: '2022-09-01 00:20:13-03:00'
+    estimated:
+      utc: '2022-09-01T02:52:56Z'
+      local: '2022-08-31 23:52:56-03:00'
+    actual:
+      utc: '2022-09-01T02:52:56Z'
+      local: '2022-08-31 23:52:56-03:00'
+    runway: '26'
+  departure_versus_schedule: -0:27:17
+  arrival_versus_schedule: -0:27:17
+  airborne_duration: '3:30:56'
+  flight_plan:
+    planned_time_enroute: '3:30:56'
+- number: 2
+  flightaware_id: SUBND-1662002458-1-1-144
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: CYYR
+    iata: YYR
+    name: CFB Goose Bay (Goose Bay)
+    city: Goose Bay
+    timezone: America/Goose_Bay
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2022-09-01T03:51:41Z'
+      local: '2022-09-01 00:51:41-03:00'
+    estimated:
+      utc: '2022-09-01T04:20:55Z'
+      local: '2022-09-01 01:20:55-03:00'
+    actual:
+      utc: '2022-09-01T04:20:55Z'
+      local: '2022-09-01 01:20:55-03:00'
+    runway: '26'
+  landing:
+    scheduled:
+      utc: '2022-09-01T09:03:00Z'
+      local: '2022-09-01 11:03:00+02:00'
+    estimated:
+      utc: '2022-09-01T09:32:14Z'
+      local: '2022-09-01 11:32:14+02:00'
+    actual:
+      utc: '2022-09-01T09:32:14Z'
+      local: '2022-09-01 11:32:14+02:00'
+    runway: '07'
+  departure_versus_schedule: +0:29:14
+  arrival_versus_schedule: +0:29:14
+  airborne_duration: '5:11:19'
+  flight_plan:
+    planned_time_enroute: '5:11:19'

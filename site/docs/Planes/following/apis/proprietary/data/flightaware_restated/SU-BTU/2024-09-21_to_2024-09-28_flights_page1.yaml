@@ -1,0 +1,123 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 21 September 2024 and 28 September 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:43:27.035Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-09-21T00:00:00Z'
+  window_utc_until_exclusive: '2024-09-28T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: FlightAware holds 3 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1726979707-adhoc-2293p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.66895
+      lon: 31.8163
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.59332
+      lon: 31.96551
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-09-22T04:46:36Z'
+      local: '2024-09-22 07:46:36+03:00'
+    estimated:
+      utc: '2024-09-22T04:46:36Z'
+      local: '2024-09-22 07:46:36+03:00'
+    actual:
+      utc: '2024-09-22T04:46:36Z'
+      local: '2024-09-22 07:46:36+03:00'
+  landing:
+    actual:
+      utc: '2024-09-22T04:46:36Z'
+      local: '2024-09-22 07:46:36+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTU-1727358590-adhoc-5559p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.16045
+      lon: 31.35827
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 26.42086
+      lon: 35.85901
+    city: Wedjh (also known as Wejh)
+    timezone: Asia/Riyadh
+  takeoff:
+    scheduled:
+      utc: '2024-09-26T14:02:49Z'
+      local: '2024-09-26 17:02:49+03:00'
+    estimated:
+      utc: '2024-09-26T14:02:49Z'
+      local: '2024-09-26 17:02:49+03:00'
+    actual:
+      utc: '2024-09-26T14:02:49Z'
+      local: '2024-09-26 17:02:49+03:00'
+  landing:
+    actual:
+      utc: '2024-09-26T14:02:49Z'
+      local: '2024-09-26 17:02:49+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBTU-1727377518-adhoc-5170p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 26.99593
+      lon: 35.92115
+    city: Wedjh (also known as Wejh)
+    timezone: Asia/Riyadh
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-09-26T19:51:05Z'
+      local: '2024-09-26 22:51:05+03:00'
+    estimated:
+      utc: '2024-09-26T19:51:05Z'
+      local: '2024-09-26 22:51:05+03:00'
+    actual:
+      utc: '2024-09-26T19:51:05Z'
+      local: '2024-09-26 22:51:05+03:00'
+  landing:
+    actual:
+      utc: '2024-09-26T19:51:05Z'
+      local: '2024-09-26 22:51:05+03:00'
+    runway: '36'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

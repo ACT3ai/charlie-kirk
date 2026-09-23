@@ -1,0 +1,52 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 22 November 2025 and 29 November 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:39:49.594Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-11-22T00:00:00Z'
+  window_utc_until_exclusive: '2025-11-29T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 1
+reading: FlightAware holds 1 flight for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1763964564-adhoc-1078p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.25613
+      lon: 31.21108
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.48345
+      lon: 31.13267
+    city: Assiut
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-11-24T06:21:37Z'
+      local: '2025-11-24 08:21:37+02:00'
+    estimated:
+      utc: '2025-11-24T06:21:37Z'
+      local: '2025-11-24 08:21:37+02:00'
+    actual:
+      utc: '2025-11-24T06:21:37Z'
+      local: '2025-11-24 08:21:37+02:00'
+  landing:
+    actual:
+      utc: '2025-11-24T06:21:37Z'
+      local: '2025-11-24 08:21:37+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

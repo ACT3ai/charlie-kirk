@@ -1,0 +1,207 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 3 August 2024 and 10 August 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:38:12.924Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-08-03T00:00:00Z'
+  window_utc_until_exclusive: '2024-08-10T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 5
+reading: FlightAware holds 5 flights for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1722849984-adhoc-3736p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.15514
+      lon: 31.3567
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: HEAL
+    iata: DBB
+    name: El Alamein International Airport
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-08-05T09:36:01Z'
+      local: '2024-08-05 12:36:01+03:00'
+    estimated:
+      utc: '2024-08-05T09:36:01Z'
+      local: '2024-08-05 12:36:01+03:00'
+    actual:
+      utc: '2024-08-05T09:36:01Z'
+      local: '2024-08-05 12:36:01+03:00'
+  landing:
+    estimated:
+      utc: '2024-08-05T10:17:59Z'
+      local: '2024-08-05 13:17:59+03:00'
+    actual:
+      utc: '2024-08-05T10:17:59Z'
+      local: '2024-08-05 13:17:59+03:00'
+    runway: '31'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:41:58
+- number: 2
+  flightaware_id: SUBND-1722860432-adhoc-2195p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: HEAL
+    iata: DBB
+    name: El Alamein International Airport
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.41498
+      lon: 31.17656
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-08-05T12:51:20Z'
+      local: '2024-08-05 15:51:20+03:00'
+    estimated:
+      utc: '2024-08-05T12:26:39Z'
+      local: '2024-08-05 15:26:39+03:00'
+    actual:
+      utc: '2024-08-05T12:26:39Z'
+      local: '2024-08-05 15:26:39+03:00'
+    runway: '31'
+  landing:
+    actual:
+      utc: '2024-08-05T12:26:39Z'
+      local: '2024-08-05 15:26:39+03:00'
+  departure_versus_schedule: -0:24:41
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBND-1722890997-adhoc-2743p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.13033
+      lon: 31.35828
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: HEAL
+    iata: DBB
+    name: El Alamein International Airport
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-08-05T20:54:09Z'
+      local: '2024-08-05 23:54:09+03:00'
+    estimated:
+      utc: '2024-08-05T20:54:09Z'
+      local: '2024-08-05 23:54:09+03:00'
+    actual:
+      utc: '2024-08-05T20:54:09Z'
+      local: '2024-08-05 23:54:09+03:00'
+  landing:
+    actual:
+      utc: '2024-08-05T20:54:09Z'
+      local: '2024-08-05 23:54:09+03:00'
+    runway: '31'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBND-1722894872-adhoc-3650p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: HEAL
+    iata: DBB
+    name: El Alamein International Airport
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.04114
+      lon: 31.35877
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-08-05T22:02:49Z'
+      local: '2024-08-06 01:02:49+03:00'
+    estimated:
+      utc: '2024-08-05T22:02:49Z'
+      local: '2024-08-06 01:02:49+03:00'
+    actual:
+      utc: '2024-08-05T22:02:49Z'
+      local: '2024-08-06 01:02:49+03:00'
+    runway: '31'
+  landing:
+    actual:
+      utc: '2024-08-05T22:02:49Z'
+      local: '2024-08-06 01:02:49+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 5
+  flightaware_id: SUBND-1723241341-adhoc-819p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.08515
+      lon: 31.35964
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: HEAL
+    iata: DBB
+    name: El Alamein International Airport
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-08-09T22:27:49Z'
+      local: '2024-08-10 01:27:49+03:00'
+    estimated:
+      utc: '2024-08-09T22:13:47Z'
+      local: '2024-08-10 01:13:47+03:00'
+    actual:
+      utc: '2024-08-09T22:13:47Z'
+      local: '2024-08-10 01:13:47+03:00'
+  landing:
+    estimated:
+      utc: '2024-08-09T22:54:53Z'
+      local: '2024-08-10 01:54:53+03:00'
+    actual:
+      utc: '2024-08-09T22:54:53Z'
+      local: '2024-08-10 01:54:53+03:00'
+    runway: '31'
+  departure_versus_schedule: -0:14:02
+  airborne_duration: 0:41:06

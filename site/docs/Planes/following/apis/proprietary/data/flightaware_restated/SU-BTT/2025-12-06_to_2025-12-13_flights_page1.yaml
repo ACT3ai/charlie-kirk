@@ -1,0 +1,289 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 6 December 2025 and 13 December 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:34:50.381Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-12-06T00:00:00Z'
+  window_utc_until_exclusive: '2025-12-13T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 6
+reading: FlightAware holds 6 flights for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1765005341-adhoc-531p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: Arrived
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.67621
+      lon: 31.4873
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: UBBB
+    iata: GYD
+    name: Heydar Aliyev Int'l
+    city: Baku
+    timezone: Asia/Baku
+  takeoff:
+    scheduled:
+      utc: '2025-12-06T07:26:29Z'
+      local: '2025-12-06 09:26:29+02:00'
+    estimated:
+      utc: '2025-12-06T07:26:29Z'
+      local: '2025-12-06 09:26:29+02:00'
+    actual:
+      utc: '2025-12-06T07:26:29Z'
+      local: '2025-12-06 09:26:29+02:00'
+  landing:
+    scheduled:
+      utc: '2025-12-06T09:58:11Z'
+      local: '2025-12-06 13:58:11+04:00'
+    estimated:
+      utc: '2025-12-06T09:58:11Z'
+      local: '2025-12-06 13:58:11+04:00'
+    actual:
+      utc: '2025-12-06T09:58:11Z'
+      local: '2025-12-06 13:58:11+04:00'
+    runway: '17'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: +0:00:00
+  airborne_duration: '2:31:42'
+  flight_plan:
+    planned_time_enroute: '2:31:42'
+- number: 2
+  flightaware_id: SUBTT-1765018169-adhoc-1255p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: UBBB
+    iata: GYD
+    name: Heydar Aliyev Int'l
+    city: Baku
+    timezone: Asia/Baku
+  to:
+    position_only_point:
+      lat: 30.91511
+      lon: 31.23688
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-12-06T10:56:24Z'
+      local: '2025-12-06 14:56:24+04:00'
+    estimated:
+      utc: '2025-12-06T10:55:57Z'
+      local: '2025-12-06 14:55:57+04:00'
+    actual:
+      utc: '2025-12-06T10:55:57Z'
+      local: '2025-12-06 14:55:57+04:00'
+    runway: '17'
+  landing:
+    scheduled:
+      utc: '2025-12-06T14:08:34Z'
+      local: '2025-12-06 16:08:34+02:00'
+    estimated:
+      utc: '2025-12-06T14:08:07Z'
+      local: '2025-12-06 16:08:07+02:00'
+    actual:
+      utc: '2025-12-06T10:55:57Z'
+      local: '2025-12-06 12:55:57+02:00'
+  departure_versus_schedule: -0:00:27
+  arrival_versus_schedule: '-3:12:37'
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: '3:12:10'
+- number: 3
+  flightaware_id: SUBTT-1765097645-adhoc-107p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.70101
+      lon: 28.9008
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.72969
+      lon: 28.82038
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-12-07T09:23:57Z'
+      local: '2025-12-07 11:23:57+02:00'
+    estimated:
+      utc: '2025-12-07T09:23:57Z'
+      local: '2025-12-07 11:23:57+02:00'
+    actual:
+      utc: '2025-12-07T09:23:57Z'
+      local: '2025-12-07 11:23:57+02:00'
+  landing:
+    scheduled:
+      utc: '2025-12-07T09:24:52Z'
+      local: '2025-12-07 11:24:52+02:00'
+    estimated:
+      utc: '2025-12-07T09:24:52Z'
+      local: '2025-12-07 11:24:52+02:00'
+    actual:
+      utc: '2025-12-07T09:23:57Z'
+      local: '2025-12-07 11:23:57+02:00'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: -0:00:55
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: 0:00:55
+- number: 4
+  flightaware_id: SUBTT-1765118796-adhoc-2058p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.74364
+      lon: 29.02529
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.74364
+      lon: 29.02529
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-12-07T14:56:59Z'
+      local: '2025-12-07 16:56:59+02:00'
+    estimated:
+      utc: '2025-12-07T14:56:59Z'
+      local: '2025-12-07 16:56:59+02:00'
+    actual:
+      utc: '2025-12-07T14:56:59Z'
+      local: '2025-12-07 16:56:59+02:00'
+  landing:
+    scheduled:
+      utc: '2025-12-07T14:58:22Z'
+      local: '2025-12-07 16:58:22+02:00'
+    estimated:
+      utc: '2025-12-07T14:58:22Z'
+      local: '2025-12-07 16:58:22+02:00'
+    actual:
+      utc: '2025-12-07T14:56:59Z'
+      local: '2025-12-07 16:56:59+02:00'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: -0:01:23
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: 0:01:23
+- number: 5
+  flightaware_id: SUBTT-1765273549-adhoc-347p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 30.60661
+      lon: 31.26956
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: UBBB
+    iata: GYD
+    name: Heydar Aliyev Int'l
+    city: Baku
+    timezone: Asia/Baku
+  takeoff:
+    scheduled:
+      utc: '2025-12-09T10:09:27Z'
+      local: '2025-12-09 12:09:27+02:00'
+    estimated:
+      utc: '2025-12-09T10:09:27Z'
+      local: '2025-12-09 12:09:27+02:00'
+    actual:
+      utc: '2025-12-09T10:09:27Z'
+      local: '2025-12-09 12:09:27+02:00'
+  landing:
+    scheduled:
+      utc: '2025-12-09T13:03:48Z'
+      local: '2025-12-09 17:03:48+04:00'
+    estimated:
+      utc: '2025-12-09T13:03:48Z'
+      local: '2025-12-09 17:03:48+04:00'
+    actual:
+      utc: '2025-12-09T13:03:48Z'
+      local: '2025-12-09 17:03:48+04:00'
+    runway: '35'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: +0:00:00
+  airborne_duration: '2:54:21'
+  flight_plan:
+    planned_time_enroute: '2:54:21'
+- number: 6
+  flightaware_id: SUBTT-1765292460-adhoc-1509p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: UBBB
+    iata: GYD
+    name: Heydar Aliyev Int'l
+    city: Baku
+    timezone: Asia/Baku
+  to:
+    position_only_point:
+      lat: 30.87498
+      lon: 31.24446
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-12-09T15:08:53Z'
+      local: '2025-12-09 19:08:53+04:00'
+    estimated:
+      utc: '2025-12-09T15:08:53Z'
+      local: '2025-12-09 19:08:53+04:00'
+    actual:
+      utc: '2025-12-09T15:02:16Z'
+      local: '2025-12-09 19:02:16+04:00'
+  landing:
+    scheduled:
+      utc: '2025-12-09T17:58:56Z'
+      local: '2025-12-09 19:58:56+02:00'
+    estimated:
+      utc: '2025-12-09T17:58:56Z'
+      local: '2025-12-09 19:58:56+02:00'
+    actual:
+      utc: '2025-12-09T15:02:16Z'
+      local: '2025-12-09 17:02:16+02:00'
+  departure_versus_schedule: -0:06:37
+  arrival_versus_schedule: '-2:56:40'
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: '2:50:03'

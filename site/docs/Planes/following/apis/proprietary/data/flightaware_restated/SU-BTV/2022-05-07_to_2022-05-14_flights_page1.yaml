@@ -1,0 +1,56 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 7 May 2022 and 14 May 2022 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:45:30.786Z'
+  vendor_http_status: 200
+  window_utc_from: '2022-05-07T00:00:00Z'
+  window_utc_until_exclusive: '2022-05-14T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 1
+reading: FlightAware holds 1 flight for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1652423076-0-0-216
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 30.59027
+      lon: 30.80067
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2022-05-13T08:05:44Z'
+      local: '2022-05-13 10:05:44+02:00'
+    estimated:
+      utc: '2022-05-13T08:05:44Z'
+      local: '2022-05-13 10:05:44+02:00'
+    actual:
+      utc: '2022-05-13T08:05:44Z'
+      local: '2022-05-13 10:05:44+02:00'
+  landing:
+    estimated:
+      utc: '2022-05-13T12:14:23Z'
+      local: '2022-05-13 14:14:23+02:00'
+    actual:
+      utc: '2022-05-13T12:14:23Z'
+      local: '2022-05-13 14:14:23+02:00'
+    runway: '27'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '4:08:39'
