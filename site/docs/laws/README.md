@@ -242,7 +242,7 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
   </div>
 </div>
 <div className="ck-4sq-card ck-4sq-stack">
-  <a className="ck-4sq-thumb" href="/TPUSA/overview"><img src="/img/evidence/094e2f88c480386133a87a76b1342a3f77906b4c47afc80641e4a8e4a63e9915.jpg" data-cid="QmP3QMMCrAeAYE9da2ugxYaHSLbaiAhe2icToLNVz2BuQD" alt="This is a digital image featuring a graphic presentation with a light olive-green background, compiled to highlight military connections of certain Christian figures." loading="lazy" /></a>
+  <a className="ck-4sq-thumb" href="/TPUSA/overview"><img src="/img/evidence/094e2f88c480386133a87a76b1342a3f77906b4c47afc80641e4a8e4a63e9915.jpg" data-cid="QmSP8MZeQ7df9mChaqs5KgjfA6UEkxBkBoFbkvod1baQ2a" alt="This is a digital image featuring a graphic presentation with a light olive-green background, compiled to highlight military connections of certain Christian figures." loading="lazy" /></a>
   <div className="ck-4sq-body">
     <p className="ck-4sq-title"><a href="/TPUSA/overview">TPUSA (Turning Point USA)</a></p>
     <p className="ck-4sq-text">The organisation behind the tour: its structure, donors, security arrangements and internal politics in Charlie Kirk&apos;s final weeks. The page does not claim TPUSA is responsible for anything.</p>

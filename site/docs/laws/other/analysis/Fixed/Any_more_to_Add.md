@@ -167,7 +167,7 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 </figure>
 
 <figure className="ck-placed-figure">
-  <a href="/Photos/Tyler_Robinson/Steam_msgs/Img_Photo_013e49"><img className="ck-placed-img" src="/img/evidence/013e49118c8eb87ada7fdc692f8261f0dc83e464174dc0624e254a904163f0dd.jpg" alt="This image is a screenshot of a mobile device displaying a comments section on the Steam gaming platform." data-cid="QmTh3n175GbRbKya74boHzuLdqqdn3KcanZ7rryiT8MWNv" loading="lazy" /></a>
+  <a href="/Photos/Tyler_Robinson/Steam_msgs/Img_Photo_013e49"><img className="ck-placed-img" src="/img/evidence/013e49118c8eb87ada7fdc692f8261f0dc83e464174dc0624e254a904163f0dd.jpg" alt="This image is a screenshot of a mobile device displaying a comments section on the Steam gaming platform." data-cid="Qmc5dptC6wnVg9NiBgaJtj8dus5guh5rmxApjD3Xar4qtD" loading="lazy" /></a>
   <figcaption className="ck-placed-caption">This image is a screenshot of a mobile device displaying a comments section on the Steam gaming platform. <a href="/Photos/Tyler_Robinson/Steam_msgs/Img_Photo_013e49">Full write-up &rarr;</a></figcaption>
 </figure>
 
@@ -236,7 +236,7 @@ Footage related to this page. Each card opens that clip's own page, with the vid
   </div>
 </div>
 <div className="ck-4sq-card ck-4sq-stack">
-  <a className="ck-4sq-thumb" href="/laws/other/old/Require_to_Investigate/more/Output_Analysis"><img src="/img/evidence/fba1bb35bff5a595befa3e69f9eed0cb448d824e1cc784c0d4adecaacbc7d7a4.jpg" data-cid="QmUiTJzwye45NpQhDtT1VsRiS8pVLpFP2mbQb14dLv9W6e" alt="This is a multi-pane visual analysis image consisting of a collage of four panels that investigate a specific architectural detail on a building." loading="lazy" /></a>
+  <a className="ck-4sq-thumb" href="/laws/other/old/Require_to_Investigate/more/Output_Analysis"><img src="/img/evidence/fba1bb35bff5a595befa3e69f9eed0cb448d824e1cc784c0d4adecaacbc7d7a4.jpg" data-cid="QmVdfTVZjjoBfSGyFNawu13X2g4FbGfirsCA5mkYsipbi4" alt="This is a multi-pane visual analysis image consisting of a collage of four panels that investigate a specific architectural detail on a building." loading="lazy" /></a>
   <div className="ck-4sq-body">
     <p className="ck-4sq-title"><a href="/laws/other/old/Require_to_Investigate/more/Output_Analysis">Output Analysis: Law 3 - Require Investigation</a></p>
     <p className="ck-4sq-text">The original audit of Law 3 against its own requirements, clause by clause. This is where the DNI-directed parallel intelligence assessment and the eight mandatory lead categories first appear in writing.</p>
@@ -278,7 +278,7 @@ Footage related to this page. Each card opens that clip's own page, with the vid
   </div>
 </div>
 <div className="ck-4sq-card ck-4sq-side">
-  <a className="ck-4sq-thumb" href="/Mic/AES"><img src="/img/evidence/e2efb55230be9ff19e9914eced77d5433d4d3fb7cafc0f086101609a4cf03b12.jpg" data-cid="QmTtc9Z8YHqRnDVHxaR93Qaah76xxfPSLSzkDpPPz4nUh6" alt="This image is a digital screenshot of a business profile page containing official registration details for a company named &quot;FIREBIRD ALARM SYSTEMS INC.&quot; retrieved from an Arizona…" loading="lazy" /></a>
+  <a className="ck-4sq-thumb" href="/Mic/AES"><img src="/img/evidence/e2efb55230be9ff19e9914eced77d5433d4d3fb7cafc0f086101609a4cf03b12.jpg" data-cid="QmaUVk4zsQZ23VP8QPxSfU16eHdNQkauGa7UzRw2s5WK76" alt="This image is a digital screenshot of a business profile page containing official registration details for a company named &quot;FIREBIRD ALARM SYSTEMS INC.&quot; retrieved from an Arizona…" loading="lazy" /></a>
   <div className="ck-4sq-body">
     <p className="ck-4sq-title"><a href="/Mic/AES">AES — Accurate Energetic Systems (Company Profile)</a></p>
     <p className="ck-4sq-text">A Tennessee explosives maker whose federal contract list reportedly includes miniature XS demolition devices, anti-personnel. A paralegal pulled it from USASpending.gov; the plant was destroyed about a month after September 10.</p>

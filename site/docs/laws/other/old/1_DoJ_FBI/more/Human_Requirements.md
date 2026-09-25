@@ -83,7 +83,7 @@ critical investigative information from the public.
   </div>
 </div>
 <div className="ck-4sq-card ck-4sq-stack">
-  <a className="ck-4sq-thumb" href="/laws/other/old/Require_to_Investigate/more/Output_Analysis"><img src="/img/evidence/fba1bb35bff5a595befa3e69f9eed0cb448d824e1cc784c0d4adecaacbc7d7a4.jpg" data-cid="QmUiTJzwye45NpQhDtT1VsRiS8pVLpFP2mbQb14dLv9W6e" alt="This is a multi-pane visual analysis image consisting of a collage of four panels that investigate a specific architectural detail on a building." loading="lazy" /></a>
+  <a className="ck-4sq-thumb" href="/laws/other/old/Require_to_Investigate/more/Output_Analysis"><img src="/img/evidence/fba1bb35bff5a595befa3e69f9eed0cb448d824e1cc784c0d4adecaacbc7d7a4.jpg" data-cid="QmVdfTVZjjoBfSGyFNawu13X2g4FbGfirsCA5mkYsipbi4" alt="This is a multi-pane visual analysis image consisting of a collage of four panels that investigate a specific architectural detail on a building." loading="lazy" /></a>
   <div className="ck-4sq-body">
     <p className="ck-4sq-title"><a href="/laws/other/old/Require_to_Investigate/more/Output_Analysis">Output Analysis: Law 3 - Require Investigation</a></p>
     <p className="ck-4sq-text">The original audit of Law 3 against its own requirements, clause by clause. This is where the DNI-directed parallel intelligence assessment and the eight mandatory lead categories first appear in writing.</p>

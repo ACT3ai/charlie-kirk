@@ -157,7 +157,7 @@ X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digi
   </div>
 </div>
 <div className="ck-4sq-card ck-4sq-stack">
-  <a className="ck-4sq-thumb" href="/Censorship/Ryne_Simmons_FBI_Video"><img src="/img/evidence/74d287dc55bcd553d96b155bf4b607d05884545659a0a6594cab16639015817d.jpg" data-cid="QmUGj177H9J5PJvorsqGXTMgXq2nbw6ZA1MVpkJ4vERGYD" alt="This image is a screenshot of a social media post on X (formerly Twitter) by user Sam Parker, featuring a vertical video frame." loading="lazy" /></a>
+  <a className="ck-4sq-thumb" href="/Censorship/Ryne_Simmons_FBI_Video"><img src="/img/evidence/74d287dc55bcd553d96b155bf4b607d05884545659a0a6594cab16639015817d.jpg" data-cid="Qme753QJNeVKnceyvtnjgnyjdwf9z8MSTRQ5SyMhRe2aQ1" alt="This image is a screenshot of a social media post on X (formerly Twitter) by user Sam Parker, featuring a vertical video frame." loading="lazy" /></a>
   <div className="ck-4sq-body">
     <p className="ck-4sq-title"><a href="/Censorship/Ryne_Simmons_FBI_Video">Ryne Simmons &mdash; FBI Video Deletion</a></p>
     <p className="ck-4sq-text">A witness says he sent the FBI close-up 4K 60fps footage of the moment Charlie Kirk was killed, then was called repeatedly and asked to delete it. He says he kept a copy. Deletion over preservation is a transparency question, not yet a court finding.</p>

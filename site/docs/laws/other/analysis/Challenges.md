@@ -116,7 +116,7 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 <div className="ck-4sq">
 
 <div className="ck-4sq-card ck-4sq-side">
-  <a className="ck-4sq-thumb" href="/US_Intelligence_Assisted/signs-of-cover-up"><img src="/img/evidence/0519c99dfc49e8bf80cee9a3d633ede596b779fa6edba4838456741a24e57244.jpg" data-cid="QmZgTAvUi5RqFx4N56xSY798mSyMECLLgcRC2qnSpABJgJ" alt="A wide shot depicting a large outdoor gathering of people next to a modern concrete building under a bright blue, partly cloudy sky." loading="lazy" /></a>
+  <a className="ck-4sq-thumb" href="/US_Intelligence_Assisted/signs-of-cover-up"><img src="/img/evidence/0519c99dfc49e8bf80cee9a3d633ede596b779fa6edba4838456741a24e57244.jpg" data-cid="QmfBCfbgGREK1e98W9fZ1vXnepLREskZ2UZhDAK9XGBTkk" alt="A wide shot depicting a large outdoor gathering of people next to a modern concrete building under a bright blue, partly cloudy sky." loading="lazy" /></a>
   <div className="ck-4sq-body">
     <p className="ck-4sq-title"><a href="/US_Intelligence_Assisted/signs-of-cover-up">Signs of Cover-Up</a></p>
     <p className="ck-4sq-text">Cement over the courtyard, a transport vehicle reportedly destroyed, a withheld surrender video, and a foreign-involvement inquiry reportedly shut within days. Every item is an allegation; the argument is about the sequence they arrived in.</p>
