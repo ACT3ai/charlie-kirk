@@ -1,3 +1,9 @@
+---
+title: "Law 2: Charlie Kirk Investigation - Intelligence Services Disclosure Act (Earlier Draft)"
+sidebar_label: "Law 2: Charlie Kirk Investigation - Intelligence Services Disclosure Act"
+description: "Earlier draft of Law 2, the Intelligence Services Disclosure Act, requiring U.S. intelligence agencies to release what they hold on Charlie Kirk's death."
+---
+
 # Law 2: Charlie Kirk Investigation - Intelligence Services Disclosure Act
 
 AUTHOR: [Bryan Starbuck](/People/bryan-starbuck) (BryanStarbuck@gmail.com)

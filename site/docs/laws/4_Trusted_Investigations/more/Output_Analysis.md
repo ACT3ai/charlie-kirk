@@ -1,3 +1,7 @@
+---
+description: "Checks Law 4, the trusted investigator teams for Charlie Kirk, requirement by requirement against its plain-language goals, with problems and recommendations."
+---
+
 # Output Analysis: Law 4 - Trusted Investigations
 
 ## Does the Law Meet the Human Requirements?

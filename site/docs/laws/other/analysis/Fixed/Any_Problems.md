@@ -1,3 +1,7 @@
+---
+description: "Attorney review of the four Charlie Kirk disclosure laws: weaknesses such as slow-rolled, unusable record productions, and how each one was fixed in the drafts."
+---
+
 # Problems, Vulnerabilities, and Recommended Fixes — FIXED ITEMS
 
 **Original analysis by:** Attorney review of all four laws

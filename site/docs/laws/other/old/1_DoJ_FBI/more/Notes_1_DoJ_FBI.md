@@ -1,3 +1,9 @@
+---
+title: "Notes: Law 1 - DoJ/FBI Forced Disclosure (Earlier Draft)"
+sidebar_label: "Notes: Law 1 - DoJ/FBI Forced Disclosure"
+description: "Earlier draft of the Law 1 legal research: lessons from the Epstein Files Transparency Act and JFK Records Act for forcing DOJ/FBI disclosure on Charlie Kirk."
+---
+
 # Notes: Law 1 - DoJ/FBI Forced Disclosure
 
 ## Legal Research

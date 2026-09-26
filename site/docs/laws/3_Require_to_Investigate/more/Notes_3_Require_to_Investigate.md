@@ -1,3 +1,7 @@
+---
+description: "Legal research behind Law 3: special counsel rules, the Church Committee, the Warren Commission and HSCA, and the pros and cons of mandating an investigation."
+---
+
 # Notes: Law 3 - Require Investigation
 
 ## Legal Research

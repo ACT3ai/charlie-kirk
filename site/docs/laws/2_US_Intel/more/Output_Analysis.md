@@ -1,3 +1,7 @@
+---
+description: "Checks Law 2, intelligence services disclosure on Charlie Kirk, requirement by requirement against its plain-language goals, with problems and recommendations."
+---
+
 # Output Analysis: Law 2 - US Intelligence Services Forced Disclosure
 
 ## Does the Law Meet the Human Requirements?

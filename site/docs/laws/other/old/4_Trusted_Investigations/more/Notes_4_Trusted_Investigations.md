@@ -1,3 +1,9 @@
+---
+title: "Notes: Law 4 - Trusted Investigations (Earlier Draft)"
+sidebar_label: "Notes: Law 4 - Trusted Investigations"
+description: "Earlier draft of the Law 4 legal research: special counsel framework, 9/11 Commission and congressional powers, applied to trusted investigator teams."
+---
+
 # Notes: Law 4 - Trusted Investigations
 
 ## Legal Research

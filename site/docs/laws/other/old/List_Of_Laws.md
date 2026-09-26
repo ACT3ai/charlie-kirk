@@ -1,3 +1,8 @@
+---
+title: "Charlie Kirk Files Forced Disclosure -- Summary of Four Proposed Federal Laws (Earlier Draft)"
+sidebar_label: "Charlie Kirk Files Forced Disclosure -- Summary of Four Proposed Federal Laws"
+---
+
 # Charlie Kirk Files Forced Disclosure -- Summary of Four Proposed Federal Laws
 
 **Project:** Legislative drafting modeled after the Epstein Files Transparency Act (Public Law 119-38)

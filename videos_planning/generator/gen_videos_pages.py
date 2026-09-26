@@ -308,8 +308,70 @@ KEY_OVERRIDES = {
 }
 
 used_keys = set(n.key for n in pub_nodes)
+
+# STABLE PAGE KEYS ACROSS RERUNS. A video that already has a published page keeps
+# that page's exact key (its URL, and every word of prose carried forward from
+# that path). The minted key depends on the file path / CID, so re-filing a video
+# or swapping in a higher-resolution copy (new sha256, sometimes a new CID) used
+# to mint a new key: the orphan sweep deleted the authored page and a generic one
+# appeared under a new URL (2026-09-26: 12 authored pages lost this way). Match an
+# existing page by sha256 first, then by CID; prefer the owner's dir, then an
+# authored page. A page found in another dir is moved so its prose carries over.
+def _head_fm(path):
+    # existing_fm() is defined further down; this pre-pass needs only three keys.
+    try:
+        head = open(path, encoding='utf-8').read(3000)
+    except OSError:
+        return {}
+    out = {}
+    for key in ('ck_video_sha256', 'ck_video_cid', 'ck_authored'):
+        m = re.search(r'^' + key + r':\s*"?([^"\n]*)"?\s*$', head, re.M)
+        if m:
+            out[key] = m.group(1).strip()
+    return out
+
+
+_existing_by = {}
+for _dp, _dn, _fns in os.walk(L2DIR):
+    for _fn in sorted(_fns):
+        if not _fn.endswith('.mdx') or _fn in PROTECTED:
+            continue
+        _p = os.path.join(_dp, _fn)
+        _fm = _head_fm(_p)
+        for _id in (_fm.get('ck_video_sha256'), _fm.get('ck_video_cid')):
+            if _id:
+                _existing_by.setdefault(_id, []).append(_p)
+_claimed_pages = set()
+
+
+def _reuse_page(r):
+    v = r['v']
+    for _id in (v.get('sha256'), v.get('cid')):
+        cands = [p for p in _existing_by.get(_id or '', [])
+                 if p not in _claimed_pages and os.path.exists(p)
+                 and os.path.splitext(os.path.basename(p))[0] not in used_keys]
+        if not cands:
+            continue
+        cands.sort(key=lambda p: (os.path.dirname(p) != r['owner'].dirpath,
+                                  _head_fm(p).get('ck_authored', '').lower() != 'true', p))
+        return cands[0]
+    return None
+
+
 for r in videos:
     v = r['v']
+    old_page = _reuse_page(r)
+    if old_page:
+        _claimed_pages.add(old_page)
+        k = os.path.splitext(os.path.basename(old_page))[0]
+        used_keys.add(k)
+        r['key'] = k
+        r['page'] = os.path.join(r['owner'].dirpath, k + '.mdx')
+        if os.path.realpath(old_page) != os.path.realpath(r['page']) and not os.path.exists(r['page']):
+            os.makedirs(os.path.dirname(r['page']), exist_ok=True)
+            os.replace(old_page, r['page'])
+        r['url'] = rel_url(r['page'])
+        continue
     seed = ''
     m = re.search(r'\[(\d{8,})\]', v.get('file_path') or '')
     if m:
@@ -733,6 +795,20 @@ def nav_block_video(r):
     lines += ['{/* CK_NAV_END */}']
     return '\n'.join(lines)
 
+def fallback_description(r):
+    """CK-05: a video with no recorded description gets a unique, informative
+    one — its title, its set, its source and running time — never the bare title."""
+    v = r['v']
+    bits = [f"Video '{clean_title(v.get('title'), 90)}' from the {_cluster_tag(r['owner'])} "
+            f"video set of the Charlie Kirk investigation"]
+    auth = sanitize_prose(v.get('source_author') or '')
+    if (v.get('source_platform') or '').lower() == 'x' and auth:
+        bits.append(f', captured from a post by {auth} on X')
+    d = dur_human(v.get('duration'))
+    if d:
+        bits.append(f', running {d}')
+    return mdx_safe(''.join(bits) + '.')
+
 def write_video_page(r):
     v = r['v']
     old = existing_fm(r['page'])
@@ -741,12 +817,14 @@ def write_video_page(r):
     label = old.get('sidebar_label') if authored and old.get('sidebar_label') else short_label(v.get('title'))
     prose = extract_prose(r['page']) or baseline_writeup(r)
     desc = (old.get('description') if authored and old.get('description')
-            else first_sentences(v.get('ai_description') or v.get('manifest_description') or title, 2, 260))
+            else first_sentences(v.get('ai_description') or v.get('manifest_description') or '', 2, 260)
+            or fallback_description(r))
     fm = ['---',
           'title: ' + esc_yaml(title),
           'sidebar_label: ' + esc_yaml(label),
           'hide_table_of_contents: true',
           'description: ' + esc_yaml(desc),
+          *(['image: ' + r['share_image']] if r.get('share_image') else []),
           'ck_authored: ' + ('true' if authored else 'false'),
           'ck_video_cid: ' + esc_yaml(v.get('cid') or ''),
           'ck_video_sha256: ' + esc_yaml(v.get('sha256') or ''),
@@ -913,8 +991,10 @@ def write_cluster_page(n):
     prose = extract_prose(n.page) or baseline_cluster_prose(n)
     kids = [k for k in n.kids if k.rec > 0]
     own = len(n.vids)
+    _anc = _anc_titles(n)[:CL_UP[id(n)]]
+    _for = n.title + (f" ({' — '.join(_anc)})" if _anc else '')
     desc = (old.get('description') if authored and old.get('description') else
-            (f'Video evidence filed under {n.title} in the Charlie Kirk investigation '
+            (f'Video evidence filed under {_for} in the Charlie Kirk investigation '
              f'— {n.rec} clip' + ('s' if n.rec != 1 else '')
              + (f' across {len(kids)} sub-section' + ('s' if len(kids) != 1 else '') if kids else '')
              + ' with write-ups and sources.'))
@@ -930,10 +1010,12 @@ def write_cluster_page(n):
     fm = ['---',
           'displayed_sidebar: docs',
           'slug: ' + rel_url(n.page),
-          'title: ' + esc_yaml(n.title),
+          'title: ' + esc_yaml(SEO_TITLE[id(n)]),
           'sidebar_label: ' + esc_yaml(label),
           'description: ' + esc_yaml(desc),
+          *(['image: ' + SHARE[id(n)]] if SHARE[id(n)] else []),
           'ck_authored: ' + ('true' if authored else 'false'),
+          'ck_base_title: ' + esc_yaml(n.title),
           'ck_node_key: ' + esc_yaml(n.key),
           '---', '']
     body = [GEN_NOTE, '',
@@ -963,7 +1045,8 @@ authored_titles = 0
 for n in pub_nodes:
     fm = existing_fm(n.page)
     if fm.get('ck_authored') == 'true' and fm.get('title'):
-        n.title = mdx_safe(sanitize_prose(fm['title']))
+        # ck_base_title is the cluster's own name; `title` carries the SEO suffix.
+        n.title = mdx_safe(sanitize_prose(fm.get('ck_base_title') or fm['title']))
         authored_titles += 1
 for r in videos:
     fm = existing_fm(r['page'])
@@ -973,6 +1056,139 @@ for r in videos:
     else:
         r['title'] = clean_title(r['v'].get('title'))
 print(f'authored titles carried forward: {authored_titles}', flush=True)
+
+# ------------------------------------------------- SEO pre-pass (CK-06, CK-07)
+# Private SEO workspace patterns: CK-07 duplicate <title>s, CK-06 one og:image
+# for every page, CK-05 thin descriptions. Decided before any page is written so
+# every TOC, peer list and pages.csv row agrees.
+from collections import Counter
+
+def _tk(t):
+    return re.sub(r'\s+', ' ', html.unescape(str(t or ''))).strip().casefold()
+
+def _external_titles():
+    """Titles of every published doc OUTSIDE this generator's pages (hand-written
+    pages, the /Photos tree, and the two protected /Videos pages)."""
+    out = set()
+    for dp, _d, fs in os.walk(DOCS):
+        inside = dp == L2DIR or dp.startswith(L2DIR + os.sep)
+        for fn in fs:
+            if not fn.endswith(('.md', '.mdx')):
+                continue
+            if inside and not (dp == L2DIR and fn in PROTECTED):
+                continue
+            full = os.path.join(dp, fn)
+            rel = os.path.relpath(full, DOCS)
+            if (any(seg.startswith('_') for seg in rel.split(os.sep)) or fn == 'CLAUDE.md'
+                    or re.match(r'p_.*\.mdx?$', fn) or f'{os.sep}prompts{os.sep}' in os.sep + rel):
+                continue
+            t = existing_fm(full).get('title', '')
+            if not t:
+                m = re.search(r'^# (.+)$', open(full, encoding='utf-8', errors='replace').read(), re.M)
+                t = m.group(1) if m else ''
+            if t:
+                out.add(_tk(t.strip("'")))
+    return out
+
+EXTERNAL_TITLES = _external_titles()
+
+# Cluster pages: "{title} — Videos"; a generic or repeated cluster title also
+# names its parent ("Other — Tyler Robinson Videos"), climbing further only
+# while it still collides.
+GENERIC_CLUSTER_TITLES = {'other', 'others', 'more', 'misc', 'miscellaneous', 'unfiled',
+                          'general', 'various', 'additional', 'extra', 'extras'}
+_ctc = Counter(_tk(n.title) for n in pub_nodes)
+
+def _anc_titles(n):
+    out, a = [], n.parent
+    while a is not None:
+        if a.rec > 0:
+            out.append(a.title)
+        a = a.parent
+    return out
+
+def _cluster_seo(n, up):
+    anc = _anc_titles(n)[:up]
+    if anc:
+        return f"{n.title} — {' — '.join(anc)} Videos"
+    return n.title if re.search(r'\bvideos$', n.title, re.I) else f'{n.title} — Videos'
+
+CL_UP = {id(n): (1 if (_tk(n.title) in GENERIC_CLUSTER_TITLES or _ctc[_tk(n.title)] > 1) else 0)
+         for n in pub_nodes}
+for _round in range(12):
+    _seo = {id(n): _cluster_seo(n, CL_UP[id(n)]) for n in pub_nodes}
+    _cnt = Counter(_tk(x) for x in _seo.values())
+    _bumped = False
+    for n in pub_nodes:
+        k = _tk(_seo[id(n)])
+        if (_cnt[k] > 1 or k in EXTERNAL_TITLES) and CL_UP[id(n)] < len(_anc_titles(n)):
+            CL_UP[id(n)] += 1
+            _bumped = True
+    if not _bumped:
+        break
+_cnt = Counter(_tk(x) for x in _seo.values())
+SEO_TITLE = {}
+for n in pub_nodes:
+    x = _seo[id(n)]
+    if _cnt[_tk(x)] > 1 or _tk(x) in EXTERNAL_TITLES:
+        x = f"{x} ({n.key.replace('_', ' ')})"
+    SEO_TITLE[id(n)] = x
+_cluster_keys = {_tk(x) for x in SEO_TITLE.values()}
+
+# Video pages: a title (authored or minted) that repeats another page's gets its
+# cluster appended, then its position in that cluster, then its key.
+def _cluster_tag(n):
+    if _tk(n.title) in GENERIC_CLUSTER_TITLES:
+        anc = _anc_titles(n)
+        if anc:
+            return f'{anc[0]} — {n.title}'
+    return n.title
+
+def _dup_video_titles():
+    c = Counter(_tk(r['title']) for r in videos)
+    return [r for r in videos if c[_tk(r['title'])] > 1 or _tk(r['title']) in _cluster_keys
+            or _tk(r['title']) in EXTERNAL_TITLES]
+
+retitled_videos = set()
+for _step in ('cluster', 'position', 'key'):
+    _dups = _dup_video_titles()
+    if not _dups:
+        break
+    for r in _dups:
+        if _step == 'cluster':
+            tag = _cluster_tag(r['owner'])
+            if _tk(r['title']).endswith(_tk(' — ' + tag)):
+                continue
+            r['title'] = f"{r['title']} — {tag}"
+        elif _step == 'position':
+            r['title'] = f"{r['title']} — Clip {r['owner'].vids.index(r) + 1}"
+        else:
+            r['title'] = f"{r['title']} ({r['key']})"
+        retitled_videos.add(r['key'])
+
+# CK-06: share image = the video's poster frame, only when that poster is
+# git-tracked (the live site builds from the repo). Clusters use the first
+# poster in their subtree. Banned videos never reach `videos`.
+def _git_tracked_names(dirpath):
+    rc, out, _ = run(['git', '-C', ROOT, 'ls-files', '--', os.path.relpath(dirpath, ROOT)], 60)
+    return {os.path.basename(l) for l in out.splitlines() if l} if rc == 0 else set()
+
+TRACKED_POSTERS = _git_tracked_names(POSTERS)
+for r in videos:
+    sha = r['v'].get('sha256') or ''
+    r['share_image'] = (r['poster'] if r['poster'] and (sha + '.jpg') in TRACKED_POSTERS else '')
+
+def _first_share(n):
+    for r in n.vids:
+        if r['share_image']:
+            return r['share_image']
+    for k in n.kids:
+        if k.rec > 0:
+            x = _first_share(k)
+            if x:
+                return x
+    return ''
+SHARE = {id(n): _first_share(n) for n in pub_nodes}
 
 # ------------------------------------------------------------------ emit
 print('writing cluster pages ...', flush=True)
@@ -1249,7 +1465,7 @@ def csv_row(page_key, parent_key, level, url, path, title, label, page_type, des
 for n in pub_nodes:
     lines = sum(1 for _ in open(n.page, encoding='utf-8'))
     parent = n.parent.key if (n.parent and n.parent.rec > 0) else 'Videos'
-    row = csv_row(n.key, parent, n.lvl, rel_url(n.page), n.page, n.title,
+    row = csv_row(n.key, parent, n.lvl, rel_url(n.page), n.page, SEO_TITLE[id(n)],
                   short_label(n.title), 'index',
                   f'Video evidence filed under {n.title}.', lines)
     mine.add(n.key)
@@ -1262,7 +1478,8 @@ for r in videos:
     t = r.get('title') or clean_title(r['v'].get('title'))
     row = csv_row(r['key'], r['owner'].key, r['owner'].lvl + 1, r['url'], r['page'],
                   t, short_label(r['v'].get('title')), 'video',
-                  first_sentences(r['v'].get('ai_description') or t, 1, 200), lines)
+                  first_sentences(r['v'].get('ai_description') or '', 1, 200)
+                  or existing_fm(r['page']).get('description') or t, lines)
     mine.add(r['key'])
     if r['key'] in by_key:
         by_key[r['key']].update(row); updated += 1
@@ -1345,6 +1562,10 @@ print(f'Video pages:   {v_new} created, {v_old} rewritten')
 print(f'Players: {modes.get("ipfs",0)} IPFS (pinned), {modes.get("thirdparty",0)} third-party embed, '
       f'{modes.get("link",0)} link-only, {modes.get("pending",0)} media pending {pend}')
 print(f'Posters written/present: {len([r for r in videos if r["poster"]])}')
+print(f'SEO: cluster titles naming a parent: {sum(1 for n in pub_nodes if CL_UP[id(n)])}; '
+      f'video titles disambiguated: {len(retitled_videos)}; share images: '
+      f'{sum(1 for r in videos if r["share_image"])} video pages, '
+      f'{sum(1 for n in pub_nodes if SHARE[id(n)])} cluster pages')
 print(f'CIDs that are not video (player withheld): {len(wrong_kind)} {wrong_kind}')
 print(f'Orphans removed: {len(orphans)}')
 print(f'pages.csv: {added} added, {updated} updated, {removed} stale Videos rows dropped')

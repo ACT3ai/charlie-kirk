@@ -1,3 +1,9 @@
+---
+title: "Human Requirements: Law 3 - Require Investigation (Earlier Draft)"
+sidebar_label: "Human Requirements: Law 3 - Require Investigation"
+description: "Earlier draft of Law 3's plain-language goals: the FBI, police and intelligence services must carry out a real, thorough investigation of Charlie Kirk's death."
+---
+
 # Human Requirements: Law 3 - Require Investigation
 
 ## Core Requirement

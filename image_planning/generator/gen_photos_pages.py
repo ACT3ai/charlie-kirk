@@ -96,6 +96,14 @@ def _route_for(repo_path, csv_url):
     real = "/" + p
     if csv_url and csv_url != real and not real.endswith("/overview"):
         return _url_safe(csv_url)
+    # An overview file renamed by a frontmatter `id:` (court/mirandize/overview.mdx
+    # served at /court/mirandize/mirandize-overview) is recorded in pages.csv at
+    # its real route; /…/overview is then only a redirect stub. Prefer the csv
+    # route unless it is the bare directory or itself ends in /overview.
+    if (csv_url and real.endswith("/overview") and csv_url != real
+            and csv_url.rstrip("/").rsplit("/", 1)[-1] != "overview"
+            and csv_url.rstrip("/") != real[: -len("/overview")]):
+        return _url_safe(csv_url)
     return _url_safe(real)
 
 
@@ -446,14 +454,67 @@ except ImportError:
     Image = None
 
 EXT_NORM = {".jpeg": ".jpg"}
+
+
+def _banned_video_shas():
+    """sha256s of banned videos (videos/ban_videos.csv + exclude_videos.txt). A
+    poster frame of a banned video is filed in images.yaml as an ordinary image
+    (…/img/video_posters/{video sha}.jpg); it is never served from here."""
+    out, unban = set(), set()
+    try:
+        with open(os.path.join(ROOT, "videos", "ban_videos.csv"), encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                s = str(r.get("sha256") or "").strip()
+                if re.fullmatch(r"[0-9a-f]{64}", s):
+                    (unban if str(r.get("banned") or "").strip().lower() == "false" else out).add(s)
+    except OSError:
+        pass
+    try:
+        with open(os.path.join(ROOT, "videos_planning", "exclude_videos.txt"), encoding="utf-8") as f:
+            for line in f:
+                line = line.split("#", 1)[0].strip()
+                if re.fullmatch(r"[0-9a-f]{64}", line):
+                    out.add(line)
+    except OSError:
+        pass
+    return out - unban
+
+
+BANNED_VIDEO_SHAS = _banned_video_shas()
+
+
+def is_banned_video_poster(fp):
+    m = re.search(r"/img/video_posters/([0-9a-f]{64})\.\w+$", fp or "")
+    return bool(m and m.group(1) in BANNED_VIDEO_SHAS)
+
+
+withheld_posters = 0
+from_served_copy = 0
 for n in nodes:
     for i in n["images"]:
         fp = i.get("file_path") or ""
         sha = i.get("sha256") or ""
         if not fp or not sha or sha in sha_ext:
             continue
+        if is_banned_video_poster(fp):
+            withheld_posters += 1
+            continue
         src = os.path.expanduser(fp)
         if not os.path.exists(src):
+            # The original moved (the Mirror is re-filed over time, which leaves
+            # images.yaml paths stale) but its served copy is already in the repo:
+            # keep serving that copy instead of downgrading the page to "Media
+            # pending".
+            have = sorted(glob.glob(os.path.join(STATIC, sha + ".*")))
+            if have:
+                sha_ext[sha] = os.path.splitext(have[0])[1]
+                from_served_copy += 1
+                if Image:
+                    try:
+                        with Image.open(have[0]) as img:
+                            sha_dims[sha] = img.size
+                    except Exception:
+                        pass
             continue
         ext = os.path.splitext(src)[1].lower()
         ext = EXT_NORM.get(ext, ext)
@@ -539,6 +600,11 @@ def host_pages(i):
         p = os.path.expanduser(str(p))
         if p.startswith(ROOT + os.sep):
             p = os.path.relpath(p, ROOT)
+        # A /Photos page is this hierarchy itself (the image's own page or a
+        # cluster overview), already reachable through Related Areas — listing it
+        # as a host produced self-links titled "overview".
+        if p.startswith(GENERATED_PREFIX):
+            continue
         if p not in rel:
             rel.append(p)
     return rel
@@ -852,6 +918,348 @@ def layout_class(sha):
         else "ck-evidence-wide"
 
 
+# ---------- SEO pre-pass: unique titles, real descriptions, share image ----------
+# Private SEO workspace patterns CK-05 (boilerplate descriptions), CK-06 (one
+# og:image for every page) and CK-07 (duplicate <title>s). Everything here is
+# decided BEFORE any page is written, so every TOC, prev/next link and pages.csv
+# row sees the same final title.
+from collections import Counter
+
+
+def _tk(t):
+    """Title identity: what a search engine would treat as 'the same title'."""
+    return re.sub(r"\s+", " ", str(t or "")).strip().casefold()
+
+
+def _external_titles():
+    """Titles of every published doc OUTSIDE /Photos (hand-written pages and
+    the sibling /Videos tree), plus the hand-written Photos landing page. A
+    generated title must not repeat any of them."""
+    out = set()
+    for dp, _d, fs in os.walk(DOCS):
+        if dp == PHOTOS or dp.startswith(PHOTOS + os.sep):
+            continue
+        for fn in fs:
+            if not fn.endswith((".md", ".mdx")):
+                continue
+            full = os.path.join(dp, fn)
+            rel = os.path.relpath(full, DOCS)
+            if (any(seg.startswith("_") for seg in rel.split(os.sep))
+                    or fn == "CLAUDE.md" or re.match(r"p_.*\.mdx?$", fn)
+                    or f"{os.sep}prompts{os.sep}" in os.sep + rel):
+                continue
+            with open(full, encoding="utf-8", errors="replace") as fh:
+                txt = fh.read(6000)
+            t = fm_get(txt, "title")
+            if not t:
+                h = re.search(r"^# (.+)$", FM_RE.sub("", txt, count=1), re.M)
+                t = h.group(1) if h else ""
+            if t:
+                out.add(_tk(t.strip("'")))
+    t = fm_get(read_existing(LANDING), "title")
+    if t:
+        out.add(_tk(t))
+    return out
+
+
+EXTERNAL_TITLES = _external_titles()
+
+# --- CK-07: cluster page titles. "{title} — Photos"; a generic or repeated
+# cluster title also names its parent ("Other — Tyler Robinson Photos"), and a
+# title that still collides climbs one more ancestor at a time.
+GENERIC_CLUSTER_TITLES = {"other", "others", "more", "misc", "miscellaneous", "unfiled",
+                          "general", "various", "additional", "extra", "extras"}
+_ctitle_count = Counter(_tk(n["title"]) for n in nodes)
+
+
+def _ancestor_titles(n):
+    return [a["title"] for a in reversed(n["parents"]) if included(a)]
+
+
+def _cluster_seo_title(n, up):
+    t = n["title"]
+    anc = _ancestor_titles(n)[:up]
+    if anc:
+        return f"{t} — {' — '.join(anc)} Photos"
+    return t if re.search(r"\bphotos$", t, re.I) else f"{t} — Photos"
+
+
+_cl_up = {id(n): (1 if (_tk(n["title"]) in GENERIC_CLUSTER_TITLES
+                         or _ctitle_count[_tk(n["title"])] > 1) else 0) for n in nodes}
+for _round in range(MAX_DEPTH + 1):
+    _seo = {id(n): _cluster_seo_title(n, _cl_up[id(n)]) for n in nodes}
+    _cnt = Counter(_tk(s) for s in _seo.values())
+    _bumped = False
+    for n in nodes:
+        k = _tk(_seo[id(n)])
+        if (_cnt[k] > 1 or k in EXTERNAL_TITLES) and _cl_up[id(n)] < len(_ancestor_titles(n)):
+            _cl_up[id(n)] += 1
+            _bumped = True
+    if not _bumped:
+        break
+_cnt = Counter(_tk(s) for s in _seo.values())
+for n in nodes:
+    s = _seo[id(n)]
+    if _cnt[_tk(s)] > 1 or _tk(s) in EXTERNAL_TITLES:
+        s = f"{s} ({n['key'].replace('_', ' ')})"
+    n["seo_title"] = s
+CLUSTER_TITLES = {_tk(n["seo_title"]) for n in nodes}
+
+# --- CK-07: image page titles. A carried-forward (possibly hand-enriched) title
+# is kept whenever it is unique across this run's pages AND the rest of the
+# site; a duplicate gets its cluster appended, then its position, then its sha.
+for pg in img_pages:
+    prior = read_existing(pg["file"])
+    if prior is None and pg["sha"]:
+        _old = existing_path_for.get((pg["sha"], pg["node"]["key"]))
+        if _old:
+            prior = read_existing(_old)
+    pg["prior"] = prior
+    pg["base_title"] = pg["title"]
+    carried = fm_get(prior, "title") or ""
+    # "{cluster} — Photo N" is this generator's own POSITIONAL fallback, not an
+    # authored title: N shifts whenever an image is added to the cluster, so a
+    # carried one collides with its neighbour's fresh one. Always recompute it.
+    if re.fullmatch(r".* — Photo \d+(?: — .*)?", carried) and \
+            carried.startswith(pg["node"]["title"] + " — Photo "):
+        carried = ""
+    pg["title"] = sanitize_prose(carried or pg["title"])
+
+
+def _cluster_tag(n):
+    if _tk(n["title"]) in GENERIC_CLUSTER_TITLES:
+        anc = _ancestor_titles(n)
+        if anc:
+            return f"{anc[0]} — {n['title']}"
+    return n["title"]
+
+
+def _dup_image_titles():
+    c = Counter(_tk(pg["title"]) for pg in img_pages)
+    return [pg for pg in img_pages
+            if c[_tk(pg["title"])] > 1 or _tk(pg["title"]) in CLUSTER_TITLES
+            or _tk(pg["title"]) in EXTERNAL_TITLES]
+
+
+retitled_images = set()
+for _step in ("cluster", "position", "sha"):
+    _dups = _dup_image_titles()
+    if not _dups:
+        break
+    for pg in _dups:
+        if _step == "cluster":
+            tag = _cluster_tag(pg["node"])
+            if _tk(pg["title"]).endswith(_tk(" — " + tag)):
+                continue
+            pg["title"] = f"{pg['title']} — {tag}"
+        elif _step == "position":
+            pg["title"] = f"{pg['title']} — Photo {pg['idx']}"
+        else:
+            pg["title"] = f"{pg['title']} ({pg['sha'][:6] or pg['key']})"
+        retitled_images.add(pg["key"])
+
+# --- CK-06: per-page share image. Only a served copy that is git-tracked (the
+# live site is built from the repo) and never an IPFS URL. Banned images never
+# reach img_pages, and EXCLUDED is re-checked here for belt and braces.
+def _git_tracked_names(dirpath):
+    try:
+        out = subprocess.run(["git", "-C", ROOT, "ls-files", "-z", "--",
+                              os.path.relpath(dirpath, ROOT)],
+                             capture_output=True, check=True).stdout
+    except Exception:
+        return set()
+    return {os.path.basename(p) for p in out.decode("utf-8", "replace").split("\0") if p}
+
+
+TRACKED_EVIDENCE = _git_tracked_names(STATIC)
+
+
+def share_image(sha):
+    ext = sha_ext.get(sha or "")
+    if not ext or sha in EXCLUDED or (sha + ext) not in TRACKED_EVIDENCE:
+        return ""
+    return f"/img/evidence/{sha}{ext}"
+
+
+for pg in img_pages:
+    pg["share_image"] = share_image(pg["sha"])
+for n in nodes:
+    n["share_image"] = next((pg["share_image"] for pg in imgs_under[id(n)]
+                             if pg["share_image"]), "")
+
+# --- CK-05: real descriptions. Order: images.yaml ai_description -> the Large
+# File Bridge .ai_description sidecar -> (for a video poster frame) the video's
+# own description -> a unique, informative fallback naming the title, the photo
+# set and the investigation page the image appears on. A carried description is
+# kept unless it is one of this generator's old boilerplate templates.
+BOILERPLATE_DESC = re.compile(
+    r"^(?:Image in the .* cluster(?: of the Charlie Kirk investigation)?\."
+    r"|Photo cluster for .* in the Charlie Kirk investigation — \d+ images"
+    r"(?: across \d+ sub-clusters)?\.)$")
+GENERATED_DESC = re.compile(
+    r"^(?:Evidence image '.*' (?:from the .* photo set, |shown on the ).*\.|Still frame from an archived video: .*"
+    r"|.* — '.*', .* photos\.|.* — '.*'\.)$")
+PENDING_BODY = "*Description pending — this image has not yet been written up.*"
+MIRROR_DIR = os.path.expanduser("~/_Mirror/Politics/Charlie_Kirk_Mi")
+SIDECAR_ROOTS_MIRROR = [
+    os.path.expanduser("~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi"),
+    os.path.expanduser("~/BGit/Bryan_git/personal_large_files_bridge/.lfbridge/_Mirror/Politics/Charlie_Kirk_Mi"),
+]
+SIDECAR_ROOTS_REPO = [
+    os.path.join(ROOT, ".lfbridge"),
+    os.path.expanduser("~/BGit/act3/act3_large_files_bridge/repos/charlie-kirk-83e62afc2c80"),
+]
+# Text harvested from a sidecar or a video record has never been through an
+# editorial pass, so any sentence carrying accusation or cause-of-death wording
+# is dropped rather than published in the site's own voice.
+UNSAFE_SENTENCE = re.compile(
+    r"electrocut|\bhand[\s-]?offs?\b|\bhandoffs?\b|\bmurder(?:ed|er|ers)?\b|\bkiller\b"
+    r"|\bassassins?\b|\bperpetrators?\b|\bguilty\b|\bframed\b|\bcommitted\b", re.I)
+
+
+def defamation_safe(text):
+    text = sanitize_prose(re.sub(r"[*_#`]+", "", text or ""))
+    parts = re.split(r"(?<=[.!?])\s+", text)
+    return " ".join(p for p in parts if p and not UNSAFE_SENTENCE.search(p)).strip()
+
+
+def _sidecar_paths(i):
+    fp = os.path.expanduser(i.get("file_path") or "")
+    out = [os.path.expanduser(i.get("ai_description_file") or "")]
+    if fp.startswith(MIRROR_DIR + os.sep):
+        rel = os.path.relpath(fp, MIRROR_DIR)
+        out += [os.path.join(r, rel + ".ai_description") for r in SIDECAR_ROOTS_MIRROR]
+    elif fp.startswith(ROOT + os.sep):
+        rel = os.path.relpath(fp, ROOT)
+        out += [os.path.join(r, rel + ".ai_description") for r in SIDECAR_ROOTS_REPO]
+    return [p for p in out if p and os.path.isfile(p)]
+
+
+def sidecar_description(i):
+    """Overview section of a Large File Bridge .ai_description sidecar."""
+    for p in _sidecar_paths(i):
+        try:
+            with open(p, encoding="utf-8", errors="replace") as f:
+                doc = yaml.safe_load(f)
+        except Exception:
+            continue
+        if not isinstance(doc, dict) or str(doc.get("status") or "") != "done":
+            continue
+        md = str(doc.get("description") or "")
+        m = re.search(r"^\s*##\s*Overview\s*$(.*?)(?=^\s*##\s|\Z)", md, re.S | re.M | re.I)
+        text = defamation_safe(m.group(1) if m else md)
+        if text:
+            return text
+    return ""
+
+
+def _load_video_records():
+    """sha256 -> (video ai_description, video page url) for poster-frame images."""
+    recs = {}
+    try:
+        with open(VIDEOS_YAML, encoding="utf-8") as f:
+            vd = yaml.safe_load(f) or {}
+    except (OSError, yaml.YAMLError):
+        return recs
+
+    def vw(n, depth):
+        for it in n.get("videos") or []:
+            v = it.get("video", it)
+            if v.get("sha256"):
+                recs.setdefault(v["sha256"], [v.get("ai_description") or "", ""])
+        for c in n.get(f"level_{depth + 1}") or []:
+            vw(c.get(f"level_{depth + 1}", c), depth + 1)
+    for it in vd.get("level_3") or []:
+        vw(it.get("level_3", it), 3)
+    try:
+        import json
+        with open(os.path.join(ROOT, "videos_planning", "generator", "generated_pages.json"),
+                  encoding="utf-8") as f:
+            for v in json.load(f).get("videos", []):
+                if v.get("sha256") in recs and v.get("url"):
+                    recs[v["sha256"]][1] = v["url"]
+    except Exception:
+        pass
+    return recs
+
+
+VIDEO_RECS = _load_video_records()
+
+
+def poster_video_text(i):
+    fp = i.get("file_path") or ""
+    if "/img/video_posters/" not in fp or is_banned_video_poster(fp):
+        return "", ""
+    vsha = os.path.splitext(os.path.basename(fp))[0]
+    desc, url = VIDEO_RECS.get(vsha, ["", ""])
+    desc = defamation_safe(desc)
+    return (("This is a still frame taken from a video in the investigation's video archive. "
+             + desc) if desc else ""), url
+
+
+def fallback_description(pg, title, hosts):
+    """No text exists for this image: name the image, its photo set, and the
+    investigation page it appears on, so the description is still unique."""
+    tag = _cluster_tag(pg["node"])
+    host = site_page_link(hosts[0])[1] if hosts else ""
+    if host and _tk(host) == _tk(tag):
+        return f"Evidence image '{title}' shown on the '{host}' page of the Charlie Kirk investigation."
+    where = (f"shown on the '{host}' page of the Charlie Kirk investigation" if host else
+             "in the Charlie Kirk investigation photo archive")
+    return f"Evidence image '{title}' from the {tag} photo set, {where}."
+
+
+desc_source = Counter()
+for pg in img_pages:
+    n, i = pg["node"], pg["img"]
+    pg["video_url"] = ""
+    desc = sanitize_prose(i.get("ai_description") or "")
+    src = "yaml" if desc else ""
+    if not desc:
+        desc = sidecar_description(i)
+        src = "sidecar" if desc else ""
+    if not desc:
+        desc, pg["video_url"] = poster_video_text(i)
+        src = "video" if desc else ""
+    pg["desc"] = desc
+    hosts = [hp for hp in host_pages(i) if page_exists(hp)]
+    if desc:
+        auto = first_sentence(desc, 200)
+        if src == "video":
+            auto = first_sentence(desc.split(". ", 1)[-1], 170)
+            auto = f"Still frame from an archived video: {auto}" if auto else ""
+    else:
+        auto = fallback_description(pg, pg["base_title"], hosts)
+        src = "fallback"
+    pg["desc_src"], pg["hosts"] = src, hosts
+    carried = fm_get(pg["prior"], "description")
+    # A carried description is only an AUTHORED one if this generator could not
+    # have written it: the old boilerplate, the first sentence of the current
+    # text, and this pre-pass's own fallback / video / de-duplicated forms are
+    # all regenerated so they track the data.
+    generated_form = bool(carried) and (
+        BOILERPLATE_DESC.match(carried.strip()) or carried == auto
+        or carried == first_sentence(desc, 200)
+        or GENERATED_DESC.match(carried.strip()))
+    if carried and not generated_form:
+        pg["fm_desc"], pg["desc_auto"] = carried, False
+        desc_source["carried"] += 1
+    else:
+        pg["fm_desc"], pg["desc_auto"] = auto, True
+        desc_source[src] += 1
+        if carried and BOILERPLATE_DESC.match(carried.strip()):
+            desc_source["boilerplate_replaced"] += 1
+# A description generated here must also be unique: two images whose write-ups
+# open with the same stock sentence get the image's own title added.
+_dc = Counter(pg["fm_desc"] for pg in img_pages)
+for pg in img_pages:
+    if pg["desc_auto"] and _dc[pg["fm_desc"]] > 1:
+        if pg["desc_src"] == "fallback":      # the unique page title does the work
+            pg["fm_desc"] = fallback_description(pg, pg["title"], pg["hosts"])
+        else:
+            pg["fm_desc"] = f"{first_sentence(pg['fm_desc'], 170).rstrip('.…')} — '{pg['title']}'."
+        desc_source["deduplicated"] += 1
+
 # ---------- emit image pages ----------
 # Resolve each image's next_image (a full ~-rooted image_page path) to the
 # site-relative url of the page that hosts it, so the "Next Image" button links
@@ -859,7 +1267,9 @@ def layout_class(sha):
 imgpath_to_url = {os.path.realpath(p["file"]): p["url"] for p in img_pages}
 for pg in img_pages:
     n, i, sha = pg["node"], pg["img"], pg["sha"]
-    desc = sanitize_prose(i.get("ai_description") or "")
+    # desc is the best real text for this image (images.yaml, else its Large
+    # File Bridge sidecar, else its video's record) — see the SEO pre-pass.
+    desc = pg["desc"]
     ipfs = i.get("ipfs_url") or ""
     if sha in sha_ext:
         src = f"/img/evidence/{sha}{sha_ext[sha]}"
@@ -868,31 +1278,28 @@ for pg in img_pages:
     else:
         src = ""
     # Prose is carried forward from the page at this path. If the image was
-    # re-filed into a different cluster its page moves directory, so also look at
-    # wherever its page lived on the previous run — otherwise a re-file silently
-    # discards every enrichment pass ever written for that image.
-    prior = read_existing(pg["file"])
-    if prior is None and pg["sha"]:
-        _old = existing_path_for.get((pg["sha"], pg["node"]["key"]))
-        if _old:
-            prior = read_existing(_old)
+    # re-filed into a different cluster its page moves directory, so the SEO
+    # pre-pass also looked at wherever its page lived on the previous run —
+    # otherwise a re-file silently discards every enrichment pass ever written.
+    prior = pg["prior"]
     alt = first_sentence(desc, 160) or pg["title"]
     # JSX attribute value: no backslashes, no double quotes (yq's JSON escapes
     # are invalid inside an MDX/JSX string attribute)
     alt_attr = (alt_of(prior) or alt).replace("\\", "").replace('"', "'")
-    fm_desc = first_sentence(desc, 200) or f"Image in the {n['title']} cluster of the Charlie Kirk investigation."
-    # carry forward enrichment
-    title = fm_get(prior, "title") or pg["title"]
-    label = fm_get(prior, "sidebar_label") or pg["title"][:40]
-    fm_desc = fm_get(prior, "description") or fm_desc
-    pg["title"] = title
+    # Title and description were settled by the SEO pre-pass (carried forward
+    # when unique and not boilerplate); the sidebar label stays short.
+    title = pg["title"]
+    label = fm_get(prior, "sidebar_label") or pg["base_title"][:40]
+    fm_desc = pg["fm_desc"]
     lines = ["---",
              "displayed_sidebar: docs",
              f"slug: {pg['url']}",
              f"title: {yq(title)}",
              f"sidebar_label: {yq(label)}",
-             f"description: {yq(fm_desc)}",
-             "hide_table_of_contents: true",
+             f"description: {yq(fm_desc)}"]
+    if pg["share_image"]:
+        lines.append(f"image: {pg['share_image']}")
+    lines += ["hide_table_of_contents: true",
              (f"ck_image_sha256: {sha}" if sha
               else f"ck_image_cid: {re.search(r'/ipfs/(\\w+)', ipfs).group(1) if re.search(r'/ipfs/(\\w+)', ipfs) else 'none'}"),
              f"ck_node_key: {n['key']}",
@@ -922,8 +1329,11 @@ for pg in img_pages:
         # The carried section already holds the placeholder this function
         # appends below; drop it so reruns don't stack one more copy each time.
         body = re.sub(r"(?:^|\n)\*Media pending — [^\n]*\*[ \t]*(?=\n|$)", "", body).strip() or None
-    body = body or (mdx_escape(desc) if desc else
-                    "*Description pending — this image has not yet been written up.*")
+    if body == PENDING_BODY and desc:
+        body = None          # real text now exists for a page that had none
+    if not body and desc and pg["video_url"]:
+        body = mdx_escape(desc) + f"\n\n[Watch the full video]({pg['video_url']})."
+    body = body or (mdx_escape(desc) if desc else PENDING_BODY)
     lines += [body, ""]
     if not src:
         lines += [MEDIA_PENDING, ""]
@@ -989,10 +1399,16 @@ for n in nodes:
         if lk and lk[0] not in seen_rel:
             rel_links.append((lk[1], lk[0]))
             seen_rel.add(lk[0])
-    fm_desc = (f"Photo cluster for {n['title']} in the Charlie Kirk investigation — "
+    # A generic or repeated cluster title names its parent here too, so two
+    # "Other" clusters never share one description.
+    _anc = _ancestor_titles(n)[:_cl_up[id(n)]]
+    _for = n["title"] + (f" ({' — '.join(_anc)})" if _anc else "")
+    fm_desc = (f"Photo cluster for {_for} in the Charlie Kirk investigation — "
                f"{n['rec_count']} images" + (f" across {len(kids)} sub-clusters" if kids else "") + ".")
     prior = read_existing(os.path.join(n["dir"], "overview.mdx"))
-    fm_desc = fm_get(prior, "description") or fm_desc
+    _carried = fm_get(prior, "description")
+    if _carried and not BOILERPLATE_DESC.match(_carried.strip()):
+        fm_desc = _carried
     about_prior = section_body(prior, "About This Cluster")
     if about_prior and BASELINE_CLUSTER_MARK not in about_prior:
         about_body = about_prior          # enrichment pass wrote this — keep it
@@ -1017,10 +1433,12 @@ for n in nodes:
     lines = ["---",
              "displayed_sidebar: docs",
              f"slug: {n['url']}",
-             f"title: {yq(n['title'])}",
+             f"title: {yq(n['seo_title'])}",
              f"sidebar_label: {yq(n['title'][:40])}",
-             f"description: {yq(fm_desc)}",
-             f"ck_node_key: {n['key']}",
+             f"description: {yq(fm_desc)}"]
+    if n["share_image"]:
+        lines.append(f"image: {n['share_image']}")
+    lines += [f"ck_node_key: {n['key']}",
              "---", "",
              back_button(p_url, p_title),
              f"# {mdx_escape(n['title'])} — Photos", "",
@@ -1260,15 +1678,13 @@ for n in nodes:
     rel_file = "site/docs/" + n["rel_dir"] + "/overview.mdx"
     new_rows[n["page_key"]] = row(
         n["page_key"], pk_parent, n["depth"], "topic", n["url"], rel_file,
-        n["title"], n["title"][:40], n["rel_dir"],
+        n["seo_title"], n["title"][:40], n["rel_dir"],
         f"Photo cluster: {n['title']} — {n['rec_count']} images.")
 for pg in img_pages:
     n = pg["node"]
-    d = first_sentence(sanitize_prose(pg["img"].get("ai_description") or ""), 200) \
-        or f"Image in the {n['title']} cluster."
     new_rows[pg["key"]] = row(
         pg["key"], n["page_key"], n["depth"] + 1, "image", pg["url"], pg["rel_file"],
-        pg["title"], pg["title"][:40], n["rel_dir"], d)
+        pg["title"], pg["base_title"][:40], n["rel_dir"], pg["fm_desc"])
 
 merged, replaced, dropped_dupes = [], 0, 0
 _seen_rows = set()
@@ -1468,7 +1884,9 @@ for p in written:
 print("============================")
 print("GENERATION COMPLETE")
 print(f"Cluster pages: {len(nodes)}  Image pages: {len(img_pages)}")
-print(f"Static: {copied} copied, {downscaled} downscaled, {skipped} already present")
+print(f"Static: {copied} copied, {downscaled} downscaled, {skipped} already present, "
+      f"{from_served_copy} served from the existing copy (original moved), "
+      f"{withheld_posters} banned-video poster frames withheld")
 print(f"pages.csv: {replaced} rows replaced, {len(merged) - len(csv_rows)} added, total {len(merged)}"
       f"  (exact-duplicate rows dropped: {dropped_dupes}; protected pages indexed: {added_protected})")
 print(f"Orphan generated files removed: {len(orphans)}")
@@ -1511,6 +1929,11 @@ if _leaked:
         print(f"    {os.path.relpath(f, ROOT)}")
     sys.exit(1)
 print(f"Landing TOC rows: {len(l3)}")
+print(f"SEO: cluster titles naming a parent: {sum(1 for n in nodes if _cl_up[id(n)])}; "
+      f"image titles disambiguated: {len(retitled_images)}; "
+      f"share images: {sum(1 for pg in img_pages if pg['share_image'])} image pages, "
+      f"{sum(1 for n in nodes if n['share_image'])} cluster pages")
+print(f"SEO: image descriptions by source: {dict(desc_source)}")
 print(f"Invisible-unicode scan: clean ({len(written)} files)")
 print(f"Unresolvable internal links: {len(missing)}", sorted(missing)[:10])
 print("============================")

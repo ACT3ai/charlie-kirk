@@ -1,3 +1,9 @@
+---
+title: "Output Analysis: Law 2 - US Intelligence Services Forced Disclosure (Earlier Draft)"
+sidebar_label: "Output Analysis: Law 2 - US Intelligence Services Forced Disclosure"
+description: "Earlier draft checking Law 2, intelligence disclosure on Charlie Kirk, against its plain-language goals, with problems found and recommendations."
+---
+
 # Output Analysis: Law 2 - US Intelligence Services Forced Disclosure
 
 ## Does the Law Meet the Human Requirements?

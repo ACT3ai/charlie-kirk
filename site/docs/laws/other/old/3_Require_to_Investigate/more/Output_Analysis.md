@@ -1,3 +1,9 @@
+---
+title: "Output Analysis: Law 3 - Require Investigation (Earlier Draft)"
+sidebar_label: "Output Analysis: Law 3 - Require Investigation"
+description: "Earlier draft checking Law 3, the mandatory Charlie Kirk investigation, against its plain-language goals, with problems found and recommendations."
+---
+
 # Output Analysis: Law 3 - Require Investigation
 
 ## Does the Law Meet the Human Requirements?

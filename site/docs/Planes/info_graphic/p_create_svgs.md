@@ -492,3 +492,50 @@ WHAT THIS PROMPT DOES NOT DO
   {PLANES_DIR}/{TAIL}/overview.mdx.
 * It does not assert intent. We can show two aircraft were on the ground at one
   field. We cannot see why, and a trace never places a person aboard.
+
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones this page touches.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2025-09-10](/Planes/Incidents/N102DZ-2025-09-10-KPVU) | [N102DZ](/Planes/N102DZ/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N102DZ-2025-09-10-KSLC) | [N102DZ](/Planes/N102DZ/overview) | [KSLC](/Planes/Airports/KSLC) | Salt Lake City, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N40JD-2025-09-10-KPVU) | [N40JD](/Planes/N40JD/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N560TW-2025-09-10-KPVU) | [N560TW](/Planes/N560TW/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N59906-2025-09-10-KPVU) | [N59906](/Planes/N59906/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N872RA-2025-09-10-KPVU) | [N872RA](/Planes/N872RA/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N888KG-2025-09-10-KPVU) | [N888KG](/Planes/N888KG/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/SU-BND-2025-09-10-KPVU) | [SU-BND](/Planes/SU-BND/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/SU-BTT-2025-09-10-KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+
+**Airports named on this page:**
+
+* [KPVU — Provo Municipal Airport](/Planes/Airports/KPVU), Provo, UT — 135 recorded ground visits, 13 tracked aircraft
+* [KILG — Wilmington Airport / New Castle Airport](/Planes/Airports/KILG), Wilmington, DE — 28 recorded ground visits, 3 tracked aircraft
+
+**Aircraft named on this page:**
+
+* [N102DZ](/Planes/N102DZ/overview) — full recovered movement record, every airport and every leg
+* [N40JD](/Planes/N40JD/overview) — full recovered movement record, every airport and every leg
+* [N560TW](/Planes/N560TW/overview) — full recovered movement record, every airport and every leg
+* [N582MM](/Planes/N582MM/overview) — full recovered movement record, every airport and every leg
+* [N872RA](/Planes/N872RA/overview) — full recovered movement record, every airport and every leg
+* [N888KG](/Planes/N888KG/overview) — full recovered movement record, every airport and every leg
+* [SU-BND](/Planes/SU-BND/overview) — full recovered movement record, every airport and every leg
+* [SU-BTT](/Planes/SU-BTT/overview) — full recovered movement record, every airport and every leg
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 292 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

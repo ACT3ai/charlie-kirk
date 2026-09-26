@@ -1,3 +1,9 @@
+---
+title: "Human Requirements: Law 2 - US Intelligence Services Forced Disclosure (Earlier Draft)"
+sidebar_label: "Human Requirements: Law 2 - US Intelligence Services Forced Disclosure"
+description: "Earlier draft of Law 2's plain-language goals: U.S. intelligence services must release anything that could identify Charlie Kirk's real killer."
+---
+
 # Human Requirements: Law 2 - US Intelligence Services Forced Disclosure
 
 ## Core Requirement

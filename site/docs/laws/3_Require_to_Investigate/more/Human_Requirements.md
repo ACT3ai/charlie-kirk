@@ -1,3 +1,7 @@
+---
+description: "The plain-language goals behind Law 3: require the FBI, police and U.S. intelligence services to carry out a real investigation of Charlie Kirk's death."
+---
+
 # Human Requirements: Law 3 - Require Investigation
 
 ## Core Requirement

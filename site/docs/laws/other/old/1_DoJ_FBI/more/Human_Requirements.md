@@ -1,3 +1,9 @@
+---
+title: "Human Requirements: Law 1 - DoJ/FBI Forced Disclosure (Earlier Draft)"
+sidebar_label: "Human Requirements: Law 1 - DoJ/FBI Forced Disclosure"
+description: "Earlier draft of Law 1's plain-language goals: force the DOJ, FBI and every police agency to disclose all their files on the Charlie Kirk assassination."
+---
+
 # Human Requirements: Law 1 - DoJ/FBI Forced Disclosure
 
 ## Core Requirement

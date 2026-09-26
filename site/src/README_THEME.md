@@ -12,6 +12,7 @@ directory back under `internals/`.
     src/theme/Root.tsx                 the notice rail, as site chrome, on 100% of pages
     src/theme/DocItem/TOC/Desktop/     the "On this page" TOC, desktop — renders null
     src/theme/DocItem/TOC/Mobile/      the "On this page" TOC, mobile  — renders null
+    src/theme/DocItem/Metadata/        wraps stock metadata; adds per-page Article/WebPage JSON-LD
 
 `Root` is the Docusaurus wrapper that sits at the very top of the app, applied
 constantly and independent of the current route. Declaring the rail there is

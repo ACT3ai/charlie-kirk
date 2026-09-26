@@ -1,3 +1,7 @@
+---
+description: "Legal research behind Law 1: lessons from the Epstein Files Transparency Act and the JFK Records Act, plus the pros and cons of forcing DOJ/FBI disclosure."
+---
+
 # Notes: Law 1 - DoJ/FBI Forced Disclosure
 
 ## Legal Research

@@ -1,3 +1,7 @@
+---
+description: "Legal research behind Law 4: the special counsel framework, the 9/11 Commission and congressional investigation powers, and the pros and cons of trusted teams."
+---
+
 # Notes: Law 4 - Trusted Investigations
 
 ## Legal Research

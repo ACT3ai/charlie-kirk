@@ -1,3 +1,9 @@
+---
+title: "Law 3: Charlie Kirk Investigation - Mandatory Investigation Act (Earlier Draft)"
+sidebar_label: "Law 3: Charlie Kirk Investigation - Mandatory Investigation Act"
+description: "Earlier draft of Law 3, the Mandatory Investigation Act, requiring the FBI and intelligence agencies to actively investigate Charlie Kirk's assassination."
+---
+
 # Law 3: Charlie Kirk Investigation - Mandatory Investigation Act
 
 AUTHOR: [Bryan Starbuck](/People/bryan-starbuck) (BryanStarbuck@gmail.com)

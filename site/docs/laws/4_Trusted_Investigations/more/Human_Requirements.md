@@ -1,3 +1,7 @@
+---
+description: "The plain-language goals behind Law 4: trusted investigators each get their own team inside the FBI and U.S. intelligence to investigate Charlie Kirk's death."
+---
+
 # Human Requirements: Law 4 - Trusted Investigations
 
 ## Core Requirement

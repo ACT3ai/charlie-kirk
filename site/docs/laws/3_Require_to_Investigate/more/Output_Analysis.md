@@ -1,3 +1,7 @@
+---
+description: "Checks Law 3, the mandatory Charlie Kirk investigation, requirement by requirement against its plain-language goals, with problems and recommendations."
+---
+
 # Output Analysis: Law 3 - Require Investigation
 
 This analysis assumes the investigation the law compels would run far wider than the state's prosecution of [Tyler Robinson](/Tyler_Robinson/overview), who is charged rather than convicted, and would not be permitted to close once a suspect is in custody.

@@ -1,3 +1,7 @@
+---
+description: "26 more disclosure items proposed beyond the original 175 for the Charlie Kirk laws, from Robinson family statements to witness intimidation, all now added."
+---
+
 # Additional Disclosure Items to Consider (Beyond the 175) — ALL ADDED
 
 **Status:** ALL 26 ITEMS HAVE BEEN ADDED TO ALL FOUR LAWS

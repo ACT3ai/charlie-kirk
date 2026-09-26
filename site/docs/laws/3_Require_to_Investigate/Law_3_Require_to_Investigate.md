@@ -1,6 +1,7 @@
 ---
 title: "Law 3: Charlie Kirk Investigation - Mandatory Investigation Act"
 sidebar_label: "Law 3: Charlie Kirk Investigation - Mandatory Investigation Act"
+description: "Full text of Law 3, the Charlie Kirk Mandatory Investigation Act: the FBI and intelligence agencies must investigate every lead, not just release files."
 ---
 
 # Law 3: Charlie Kirk Investigation - Mandatory Investigation Act

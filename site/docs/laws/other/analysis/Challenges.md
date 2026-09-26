@@ -1,3 +1,7 @@
+---
+description: "The one factual challenge to the four Charlie Kirk disclosure laws still open: an inconsistent count of Schedule A disclosure items across project documents."
+---
+
 
 This is to see if X.com had any possible challenges to anything.
 

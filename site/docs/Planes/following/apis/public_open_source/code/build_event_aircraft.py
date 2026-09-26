@@ -84,9 +84,16 @@ def load_events():
     return out
 
 
+def place_text(city, state):
+    """'City, ST' with empty or UNKNOWN parts dropped (never 'Seoul, ,')."""
+    parts = [pf.esc(x) for x in (city, state) if x and x.upper() != "UNKNOWN"]
+    return ", ".join(parts) or "an unrecorded location"
+
+
 def build(stem, ev, circle_rows, ground_rows, control_by_date):
     city = ev["city"].strip()
     state = ev["state"].strip()
+    where = place_text(city, state)
     edate = ev["dates"].strip()
     who = ev.get("who", "").strip() or "Charlie"
 
@@ -99,7 +106,7 @@ def build(stem, ev, circle_rows, ground_rows, control_by_date):
             f"**This date was not covered by the geographic sweep.** The sweep "
             f"streams an entire UTC day of the open ADS-B archive and filters it "
             f"to a 50-mile circle on the event city. It has not been run for "
-            f"{edate} at {pf.esc(city)}, {pf.esc(state)}, so this page cannot say "
+            f"{edate} at {where}, so this page cannot say "
             f"what was or was not parked nearby."
         )
         L.append("")
@@ -118,7 +125,7 @@ def build(stem, ev, circle_rows, ground_rows, control_by_date):
     L.append(
         f"A **blind geographic sweep** streams an entire UTC day of the open "
         f"ADS-B archive — 74,000 to 95,000 aircraft — and keeps only what fell "
-        f"inside a 50-mile circle on **{pf.esc(city)}, {pf.esc(state)}**. It is "
+        f"inside a 50-mile circle on **{where}**. It is "
         f"not given a tail number, so it cannot be steered toward a wanted "
         f"answer. Here is what it found around this event."
     )

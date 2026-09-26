@@ -1,3 +1,7 @@
+---
+description: "The plain-language goals behind Law 2: make U.S. intelligence services release anything that could identify Charlie Kirk's real killer, shielding only sources."
+---
+
 # Human Requirements: Law 2 - US Intelligence Services Forced Disclosure
 
 ## Core Requirement

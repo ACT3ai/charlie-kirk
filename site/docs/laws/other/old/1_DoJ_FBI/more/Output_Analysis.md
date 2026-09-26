@@ -1,3 +1,9 @@
+---
+title: "Output Analysis: Law 1 - DoJ/FBI Forced Disclosure (Earlier Draft)"
+sidebar_label: "Output Analysis: Law 1 - DoJ/FBI Forced Disclosure"
+description: "Earlier draft checking Law 1, DOJ/FBI forced disclosure on Charlie Kirk, against its plain-language goals, with problems found and recommendations."
+---
+
 # Output Analysis: Law 1 - DoJ/FBI Forced Disclosure
 
 ## Does the Law Meet the Human Requirements?

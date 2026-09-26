@@ -1,3 +1,7 @@
+---
+description: "Legal research behind Law 2: the JFK Records Act, classification rules under Executive Order 13526 and Epstein Act compliance failures, with pros and cons."
+---
+
 # Notes: Law 2 - US Intelligence Services Forced Disclosure
 
 These notes assume the state prosecution proceeds on its own track: nothing compelled by this law would depend on the outcome of the [case against Tyler Robinson](/Tyler_Robinson/overview), who is charged and not convicted.

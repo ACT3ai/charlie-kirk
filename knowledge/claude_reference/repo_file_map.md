@@ -391,7 +391,7 @@ DIR:
   (kill_me_research/, future_president_research/, groyper_research/,
   leader_of_churches_research/, ...). tmp/kill_me_research/ holds the KM-01..13
   research files behind the km-*-timeline.svg registry in timeslines.csv.
-* analysis/: One-off analyses, e.g. analysis/seo.txt.
+* SEO analysis, plans and prompts are PRIVATE and live outside this public repo in ~/BGit/all/politics/charlie_kirk/marketing/seo/ (moved 2026-09-26; analysis/seo.txt went there).
 * Backup/: STALE — UX design page specs for an unrelated "backup viewer" app
   that drifted into this repo. Not part of the investigation.
 * cover_image/: NanoBanana prompts and the generated OG social card. The site's

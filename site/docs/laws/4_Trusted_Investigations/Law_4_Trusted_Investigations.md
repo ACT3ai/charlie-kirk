@@ -1,3 +1,7 @@
+---
+description: "Full text of Law 4, the Trusted Investigators Act: named trusted investigators get their own FBI and intelligence teams to investigate Charlie Kirk's death."
+---
+
 # Law 4: Charlie Kirk Investigation - Trusted Investigators Act
 
 AUTHOR: [Bryan Starbuck](/People/bryan-starbuck) (BryanStarbuck@gmail.com)

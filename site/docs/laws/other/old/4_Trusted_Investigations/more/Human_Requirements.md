@@ -1,3 +1,9 @@
+---
+title: "Human Requirements: Law 4 - Trusted Investigations (Earlier Draft)"
+sidebar_label: "Human Requirements: Law 4 - Trusted Investigations"
+description: "Earlier draft of Law 4's plain-language goals: trusted investigators get their own FBI and intelligence teams to investigate Charlie Kirk's death."
+---
+
 # Human Requirements: Law 4 - Trusted Investigations
 
 ## Core Requirement

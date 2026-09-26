@@ -1,3 +1,7 @@
+---
+description: "Checks Law 1, DOJ/FBI forced disclosure on Charlie Kirk, requirement by requirement against its plain-language goals, with problems and recommendations."
+---
+
 # Output Analysis: Law 1 - DoJ/FBI Forced Disclosure
 
 ## Does the Law Meet the Human Requirements?

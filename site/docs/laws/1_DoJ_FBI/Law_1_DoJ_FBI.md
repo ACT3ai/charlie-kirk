@@ -1,6 +1,7 @@
 ---
 title: "Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure Act"
 sidebar_label: "Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure Act"
+description: "Full draft text of Law 1, the Charlie Kirk Files Forced Disclosure Act: forces the DOJ, FBI and all law enforcement to release every file on his assassination."
 ---
 
 # Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure Act

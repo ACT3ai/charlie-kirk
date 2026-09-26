@@ -1,3 +1,9 @@
+---
+title: "Output Analysis: Law 4 - Trusted Investigations (Earlier Draft)"
+sidebar_label: "Output Analysis: Law 4 - Trusted Investigations"
+description: "Earlier draft checking Law 4, trusted investigator teams for Charlie Kirk, against its plain-language goals, with problems found and recommendations."
+---
+
 # Output Analysis: Law 4 - Trusted Investigations
 
 ## Does the Law Meet the Human Requirements?

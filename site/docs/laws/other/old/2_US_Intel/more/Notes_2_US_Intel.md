@@ -1,3 +1,9 @@
+---
+title: "Notes: Law 2 - US Intelligence Services Forced Disclosure (Earlier Draft)"
+sidebar_label: "Notes: Law 2 - US Intelligence Services Forced Disclosure"
+description: "Earlier draft of the Law 2 legal research: the JFK Records Act, Executive Order 13526 and Epstein Act failures, applied to intelligence disclosure."
+---
+
 # Notes: Law 2 - US Intelligence Services Forced Disclosure
 
 ## Legal Research

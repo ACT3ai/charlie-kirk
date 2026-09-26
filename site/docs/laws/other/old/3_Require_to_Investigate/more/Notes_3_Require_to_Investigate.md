@@ -1,3 +1,9 @@
+---
+title: "Notes: Law 3 - Require Investigation (Earlier Draft)"
+sidebar_label: "Notes: Law 3 - Require Investigation"
+description: "Earlier draft of the Law 3 legal research: special counsel rules, the Church Committee, Warren Commission and HSCA, applied to a Charlie Kirk investigation."
+---
+
 # Notes: Law 3 - Require Investigation
 
 ## Legal Research

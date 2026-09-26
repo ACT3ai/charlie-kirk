@@ -21,7 +21,16 @@ jobs:
       run:
         working-directory: site
     steps:
+      # Full history (blobless) so Docusaurus reads each page's real git date.
+      # A shallow clone stamped all 5,652 sitemap lastmods and every "Last updated"
+      # line with the build date, which teaches Google to ignore our lastmod.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none
+      # Rename detection would lazily download blobs on a blobless clone while
+      # Docusaurus runs `git log --name-status`; dates do not need it.
+      - run: git config diff.renames false
       - uses: actions/setup-node@v4
         with:
           node-version: 20

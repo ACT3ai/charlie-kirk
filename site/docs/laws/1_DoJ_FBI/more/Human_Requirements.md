@@ -1,3 +1,7 @@
+---
+description: "The plain-language goals behind Law 1: force the DOJ, FBI and every police agency to disclose all their files on the Charlie Kirk assassination."
+---
+
 # Human Requirements: Law 1 - DoJ/FBI Forced Disclosure
 
 ## Core Requirement

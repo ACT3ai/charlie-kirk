@@ -79,11 +79,14 @@ const config: Config = {
   // per-page by Docusaurus automatically — never add a site-wide canonical
   // here, or every page will canonicalize to the homepage and be deindexed.
   headTags: [
+    // Snippet/preview directives ONLY — never "index, follow" here. index,follow is
+    // the default, and a site-wide copy contradicts the per-page noindex Docusaurus
+    // emits on /404 and on every client-redirect stub (two robots tags in one head).
     {
       tagName: "meta",
       attributes: {
         name: "robots",
-        content: "index, follow, max-image-preview:large, max-snippet:-1",
+        content: "max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       },
     },
     {
@@ -93,13 +96,9 @@ const config: Config = {
         content: siteTitle,
       },
     },
-    {
-      tagName: "meta",
-      attributes: {
-        property: "og:locale",
-        content: "en_US",
-      },
-    },
+    // No og:locale here: theme-classic already emits one per page.
+    // One WebSite node + one Organization node. No SearchAction: the sitelinks
+    // searchbox was retired (Nov 2024) and /search is disallowed in robots.txt.
     {
       tagName: "script",
       attributes: {
@@ -107,29 +106,24 @@ const config: Config = {
       },
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        name: siteTitle,
-        url: siteUrl,
-        description: siteDescription,
-        inLanguage: "en-US",
-        potentialAction: {
-          "@type": "SearchAction",
-          target: `${siteUrl}/search?q={search_term_string}`,
-          "query-input": "required name=search_term_string",
-        },
-      }),
-    },
-    {
-      tagName: "script",
-      attributes: {
-        type: "application/ld+json",
-      },
-      innerHTML: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        name: "Who Assassinated Charlie Kirk",
-        url: siteUrl,
-        logo: `${siteUrl}/img/Header_Charlie.jpeg`,
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": `${siteUrl}/#website`,
+            name: siteTitle,
+            url: siteUrl,
+            description: siteDescription,
+            inLanguage: "en-US",
+            publisher: { "@id": `${siteUrl}/#organization` },
+          },
+          {
+            "@type": "Organization",
+            "@id": `${siteUrl}/#organization`,
+            name: siteTitle,
+            url: siteUrl,
+            logo: `${siteUrl}/img/Header_Charlie.jpeg`,
+          },
+        ],
       }),
     },
   ],
@@ -188,6 +182,28 @@ const config: Config = {
           { from: "/property_locations", to: "/Locations/overview" },
           // Cabot alibi moved under the new Fort Huachuca Level 3 cluster.
           { from: "/US_Intelligence/Cabot_alibi", to: "/US_Intelligence/Fort_Huachuca/Cabot_alibi" },
+          // Autopsy cluster moved Charlie/Autopsy -> Medical/Autopsy (c9ecfe6de,
+          // 2026-06-26). /Charlie/Autopsy is still in search indexes and was 404ing.
+          { from: "/Charlie/Autopsy", to: "/Medical/Autopsy/overview" },
+          { from: "/Charlie/Autopsy/overview", to: "/Medical/Autopsy/overview" },
+          { from: "/Charlie/Autopsy/autopsy-law-sb0082", to: "/Medical/Autopsy/autopsy_law_sb0082" },
+          { from: "/Charlie/Autopsy/death-certificate", to: "/Medical/Autopsy/death_certificate" },
+          { from: "/Charlie/Autopsy/medical-examiner-surgeons", to: "/Medical/Autopsy/medical_examiner_surgeons" },
+          { from: "/Charlie/Autopsy/no-autopsy-claims", to: "/Medical/Autopsy/no_autopsy_claims" },
+          { from: "/Charlie/Autopsy/wound-analysis-theories", to: "/Medical/Autopsy/wound_analysis_theories" },
+          { from: "/Charlie/Autopsy/hospital-choice-transport", to: "/Medical/Hospital/hospital_choice_transport" },
+          { from: "/Charlie/Autopsy/hospital-scene-ems", to: "/Medical/Hospital/hospital_scene_ems" },
+          // The two targets behind 33 of the build's 34 "Broken link" warnings
+          // (19 generated Photos pages + 14 others link to them). Docusaurus strips
+          // the "911-" filename prefix as a sidebar-ordering number, and the
+          // mirandize hub's route is mirandize-overview.
+          { from: "/court/mirandize/overview", to: "/court/mirandize/mirandize-overview" },
+          { from: "/Witnesses/911-calls-rooftop-witness", to: "/Witnesses/calls-rooftop-witness" },
+          // Duplicate video pages folded into one when the videos were upgraded to
+          // higher-resolution copies (2026-09-26); the surviving page holds the same video.
+          { from: "/Videos/Vid_Gov_Mind_Control/Vid_Mkultra_Mind_Control/Vid_Professor_Example_nUPwPTC", to: "/Videos/Vid_Gov_Mind_Control/Vid_Mkultra_Mind_Control/Vid_Illuminatibot_VOICE_SKULL_TECHNOLOGY_2033659" },
+          { from: "/Videos/Vid_US_Intelligence/Vid_CIA_Archive_Video/Vid_Original_Fixed_High_Q_n4m8oYt", to: "/Videos/Vid_US_Intelligence/Vid_CIA_Archive_Video/Vid_FINAL_CIA_Drones_a74hWXT" },
+          { from: "/Videos/Vid_US_Intelligence/Vid_CIA_Footage/Vid_Full_Drone_2025_Oct_hoQ1YxX", to: "/Videos/Vid_US_Intelligence/Vid_CIA_Footage/Vid_FINAL_CIA_Drones_3L2xrQM" },
         ],
       },
     ],
@@ -229,8 +245,12 @@ const config: Config = {
           customCss: "./internals/src/css/custom.css",
         },
         sitemap: {
-          changefreq: "weekly",
-          priority: 0.5,
+          // Google and Bing ignore changefreq/priority; uniform values carry no
+          // information. lastmod is honest only because the Pages workflow does a
+          // full-history checkout (fetch-depth: 0) — a shallow clone stamps every
+          // URL with the build date.
+          changefreq: null,
+          priority: null,
           lastmod: "date",
           // /404 — noindex page, must never appear in sitemap.
           // /Tyler/**, /Plane/**, /Topics3/**, /CIA/** — old directory paths
@@ -254,6 +274,13 @@ const config: Config = {
             "/Israel/israel-planes",
             "/Before/PreEvent_Flights_And_Travel",
             "/Influencers/podcasts-project-costa-2",
+            "/Charlie/Autopsy",
+            "/Charlie/Autopsy/**",
+            "/court/mirandize/overview",
+            "/Witnesses/911-calls-rooftop-witness",
+            "/Videos/Vid_Gov_Mind_Control/Vid_Mkultra_Mind_Control/Vid_Professor_Example_nUPwPTC",
+            "/Videos/Vid_US_Intelligence/Vid_CIA_Archive_Video/Vid_Original_Fixed_High_Q_n4m8oYt",
+            "/Videos/Vid_US_Intelligence/Vid_CIA_Footage/Vid_Full_Drone_2025_Oct_hoQ1YxX",
           ],
           // Filter out redirect stubs generated by plugin-client-redirects.
           // createRedirects creates a stub at every parent path of an /overview
@@ -281,22 +308,17 @@ const config: Config = {
   themeConfig: {
     // Default social card used by Open Graph / Twitter when a page has no own image
     image: socialCard,
+    // ONLY values that are genuinely identical on every page belong here.
+    // theme-classic renders themeConfig.metadata in a LATER <Head> than each
+    // page's own tags, so anything per-page placed here overwrites every page.
+    // Measured 2026-09-26: og:url was the homepage on 5,651 of 5,652 pages and
+    // twitter:title/description were the site-wide strings, so every interior
+    // page shared on X unfurled as the homepage. og:url, og:title, og:image,
+    // twitter:image and description are emitted per page by Docusaurus; X falls
+    // back to og:title/og:description when twitter:title/description are absent.
     metadata: [
-      { name: "description", content: siteDescription },
-      {
-        name: "keywords",
-        content:
-          "Charlie Kirk, Charlie Kirk assassination, Charlie Kirk shooting, Utah Valley University, UVU, September 10 2025, Tyler Robinson, TPUSA, Turning Point USA, investigation, intelligence services, cover-up, FBI, CIA, Mossad, who killed Charlie Kirk",
-      },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: siteTitle },
-      { name: "twitter:description", content: siteDescription },
-      { name: "twitter:image", content: `${siteUrl}/${socialCard}` },
       { property: "og:type", content: "website" },
-      { property: "og:title", content: siteTitle },
-      { property: "og:description", content: siteDescription },
-      { property: "og:image", content: `${siteUrl}/${socialCard}` },
-      { property: "og:url", content: siteUrl },
     ],
     colorMode: {
       respectPrefersColorScheme: true,
@@ -315,8 +337,49 @@ const config: Config = {
         { to: "/Your_Actions_Fix_It/overview", label: "Your Actions Fix It", position: "left" },
       ],
     },
+    // Footer links render on every page (5,600+), so they are the strongest
+    // internal links the hubs get, and they put the About/Methodology page (the
+    // site's trust page for this YMYL topic) one click from everywhere.
     footer: {
       style: "dark",
+      links: [
+        {
+          title: "The Evidence",
+          items: [
+            { label: "Timeline", to: "/Timeline/overview" },
+            { label: "Proof Not Tyler", to: "/Proof_Not_Tyler/overview" },
+            { label: "Cause of Death", to: "/Cause_of_Death/overview" },
+            { label: "The Microphone", to: "/Mic/overview" },
+            { label: "Medical and Autopsy", to: "/Medical/overview" },
+          ],
+        },
+        {
+          title: "The Case",
+          items: [
+            { label: "Court & Trial", to: "/court/overview" },
+            { label: "Tyler Robinson", to: "/Tyler_Robinson/overview" },
+            { label: "Planes", to: "/Planes/overview" },
+            { label: "Cover Up", to: "/CoverUp/overview" },
+            { label: "People", to: "/People/overview" },
+          ],
+        },
+        {
+          title: "Take Action",
+          items: [
+            { label: "New Laws (Fix)", to: "/Fix/overview" },
+            { label: "Your Actions Fix It", to: "/Your_Actions_Fix_It/overview" },
+            { label: "Photos", to: "/Photos/overview" },
+            { label: "Videos", to: "/Videos/overview" },
+          ],
+        },
+        {
+          title: "About",
+          items: [
+            { label: "About & Methodology", to: "/About/overview" },
+            { label: "Report a Correction", href: "https://github.com/ACT3ai/charlie-kirk/issues" },
+          ],
+        },
+      ],
       copyright: `Copyright © ${new Date().getFullYear()}. All rights reserved.`,
     },
     prism: {
